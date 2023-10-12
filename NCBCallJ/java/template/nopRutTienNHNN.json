@@ -1,0 +1,40 @@
+{
+    "nopRutTienNHNNReq": {
+        "header": {
+            "common": {
+                "serviceVersion": "[serviceVersion]",
+                "messageId": "[messageId]",
+                "transactionId": "[transactionId]",
+                "messageTimestamp": "[messageTimestamp]"
+            },
+            "client": {
+                "sourceAppID": "[sourceAppID]",
+                "targetAppIDs": "[targetAppIDs]",
+                "userDetail": {
+                    "userID": "[userID]",
+                    "userPassword": "[userPassword]"
+                }
+            }
+        },
+        "bodyReq": 
+        {
+            "functionCode": "FLEXCASH-NOPRUTTIENNHNN-SOAP-T24",
+            "flexId": "[0]",
+            "flexInput": "[1]",
+            "flexAuth": "[2]",
+            "debitAccount": {
+                "acctNo": "[3]",
+                "currency": "[4]",
+                "amount": "[5]",
+                "valueDate": "[6]"
+            },
+            "creditAccount": {
+                "acctNo": "[7]"
+            },
+            "orderingCust": "[8]",
+            "paymentDetails": "[9]",
+            "profitCentreDept": "[10]",
+            "company": "[11]"
+        }
+    }
+}

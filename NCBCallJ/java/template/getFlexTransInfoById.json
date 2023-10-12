@@ -1,0 +1,26 @@
+{
+    "getFlexTransInfoByIdReq": {
+        "header": {
+            "common": {
+                "serviceVersion": "[serviceVersion]",
+                "messageId": "[messageId]",
+                "transactionId": "[transactionId]",
+                "messageTimestamp": "[messageTimestamp]"
+            },
+            "client": {
+                "sourceAppID": "[sourceAppID]",
+                "targetAppIDs": "[targetAppIDs]",
+                "userDetail": {
+                    "userID": "[userID]",
+                    "userPassword": "[userPassword]"
+                }
+            }
+        },
+        "bodyReq": {
+            "functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24",
+            "columnName": "ID",
+            "criteriaValue": "[0]",
+            "operand": "EQ"
+        }
+    }
+}
