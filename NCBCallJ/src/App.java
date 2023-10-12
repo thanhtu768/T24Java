@@ -10,7 +10,7 @@ public class App {
         String data4 = "getFlexTransInfoById^{\"functionCode\": \"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24\",\"columnName\": \"ID\",\"criteriaValue\": \"FLEXID123\",\"operand\": \"EQ\"}";
         String data5 = "getFlexTransInfoById^{\"functionCode\": \"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24\",\"columnName\": \"ID\",\"criteriaValue\": \"tult-FLEX-TEST9443C14\",\"operand\": \"EQ\"}";
         //String res = flexCashController.CallESBRestAPIWithoutTemplate(data4);
-        //String res = FlexCashController.CallRestAPIByFullJsonData(data3);
+        //String res = FlexCashController.CallRestAPIByFullJsonData(data3);//
         String res = CallAPIController.CallESBRestAPI(data);
         System.out.println(res);
     }
