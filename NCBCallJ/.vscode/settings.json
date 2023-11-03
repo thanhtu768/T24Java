@@ -6,7 +6,7 @@
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "d:\\Users\\tult2\\Desktop\\T24 Work\\FlexCash-7\\gson-2.10.1-sources.jar",
+        "D:\\Git Repo\\T24Java\\NCBCallJ\\lib\\gson-2.10.1-sources",
         "d:\\Users\\tult2\\Desktop\\T24 Work\\FlexCash-7\\gson-2.10.1.jar"
     ]
 }
