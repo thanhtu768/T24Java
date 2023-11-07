@@ -3,16 +3,20 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.io.Reader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
 import java.util.UUID;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
@@ -31,37 +35,13 @@ public class CallAPIController {
     public static final String FORMART_REQ_ROOT_NAME = "%sReq";
     public static final Date NOW_DATETIME = Calendar.getInstance().getTime();
     public static String FORMAT_TEMP_RES_STATUS = "%sres.responseStatus.status";
-    
+    public static String FORMAT_TEMP_RES_BODY = "%sRes.bodyRes";
+
     static String strUrl, method, request;
     static URL url;
     public static T24ParamModel paramModel = new T24ParamModel();
 
-    /**
-     * 
-     * @param data T24 sample:
-     *             nopRutTienNHNN^param1*param2*param3*param4*...
-     *             Example: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20230909*500000000224*CN
-     *             Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu
-     *             NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu
-     *             NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001 
-    *              
-     * @return response raw data / Json response
-     */
-    
-    public static String CallESBRestAPI(String data) {
-        try {
-            SetCommonData(data);
-            request = BuildRequestFromTempData(paramModel);
-            request = GetESBRequestHeader(request);
-            return GetResponseString(request);
-        } catch (Exception e) {
-            e.printStackTrace();
-            LogControl.WriteStackTrace(e);
-            return "";
-        }
-    }
-    
-    static void SetCommonData(String data) throws Exception{
+    static void SetInputCommonData(String data) throws Exception {
         LogControl.WriteLog(data);
         paramModel = GetT24ParamModel(data);
         strUrl = ConfigReader
@@ -70,36 +50,73 @@ public class CallAPIController {
                 .GetJsonConfigByMultiKey(String.format(ConfigReader.FORMAT_CNF_METHOD, paramModel.endPointName));
         url = new URL(strUrl);
     }
-/**
- * 
- * @param data T24 sample: 'getFlexTransInfoById^{"functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","columnName": "ID","criteriaValue": "tult-FLEX-TEST9443C14","operand": "EQ"}'
- * @return
- * @throws Exception
- */
+
+    /**
+     * 
+     * @param data T24 sample:
+     *             nopRutTienNHNN^param1*param2*param3*param4*...
+     *             Example:nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20230909*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+     * 
+     * @return response raw data / Json response
+     */
+
+    public static String CallESBRestAPI(String data) {
+        try {
+            SetInputCommonData(data);
+            request = BuildRequestFromTempData(paramModel);
+            request = GetESBRequestHeader(request);
+            return GetResponseString(request, false);
+        } catch (Exception e) {
+            e.printStackTrace();
+            LogControl.WriteStackTrace(e);
+            return "";
+        }
+    }
+
+     public static String CallESBRestAPIFullResponse(String data) {
+        try {
+            SetInputCommonData(data);
+            request = BuildRequestFromTempData(paramModel);
+            request = GetESBRequestHeader(request);
+            return GetResponseString(request, true);
+        } catch (Exception e) {
+            e.printStackTrace();
+            LogControl.WriteStackTrace(e);
+            return "";
+        }
+    }
+
+    /**
+     * 
+     * @param data T24 sample: 'getFlexTransInfoById^{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","columnName":"ID","criteriaValue": "tult-FLEX-TEST9443C14","operand": "EQ"}'
+     * @return
+     * @throws Exception
+     */
     public static String CallESBRestAPIWithoutTemplate(String data) throws Exception {
         try {
-            SetCommonData(data);
+            SetInputCommonData(data);
             ESBRequestHeader reqHeaderObj = GetESBRequestHeader();
             String reqHeader = reqHeaderObj.toJson();
             request = BuildRequestFromObjectData(reqHeader, paramModel.requestDataRaw);
-            return GetResponseString(request);
+            return GetResponseString(request, false);
         } catch (Exception e) {
             e.printStackTrace();
             LogControl.WriteStackTrace(e);
             throw e;
         }
     }
-/**
- * 
- * @param data T24 sample: 'getFlexTransInfoById^{"getFlexTransInfoByIdReq": {"header": {"common": {"serviceVersion": "1","messageId": "{{$guid}}","transactionId": "{{$guid}}","messageTimestamp": "2022-12-14T11:29:04.464+07:00"},"client": {"sourceAppID": "MB","targetAppIDs": "T24","userDetail": {"userID": "MB","userPassword": "RUJBTksxMjM="}}},"bodyReq": {"functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","columnName": "ID","criteriaValue": "tult-FLEX-TEST9443C14","operand": "EQ"}}}'
- * @return
- * @throws Exception
- */
-    public static String CallRestAPIByFullJsonData(String data) throws Exception {
+
+    /**
+     * 
+     * @param data T24 sample: 'getFlexTransInfoById^{"getFlexTransInfoByIdReq":{"header": {"common": {"serviceVersion": "1","messageId": "{{$guid}}","transactionId": "{{$guid}}","messageTimestamp":"2022-12-14T11:29:04.464+07:00"},"client": {"sourceAppID":"MB","targetAppIDs": "T24","userDetail": {"userID":"MB","userPassword": "RUJBTksxMjM="}}},"bodyReq":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","columnName":"ID","criteriaValue": "tult-FLEX-TEST9443C14","operand": "EQ"}}}'
+     * @return
+     * @throws Exception
+     */
+    public static String CallRestAPIByFullJsonRequestData(String data) throws Exception {
         try {
-            SetCommonData(data);
+            SetInputCommonData(data);
             request = paramModel.requestDataRaw;
-            return GetResponseString(request);
+            return GetResponseString(request, false);
         } catch (Exception e) {
             e.printStackTrace();
             LogControl.WriteStackTrace(e);
@@ -109,7 +126,6 @@ public class CallAPIController {
 
     public static T24ParamModel GetT24ParamModel(String data) {
         try {
-
             T24ParamModel t24DataModel = new T24ParamModel();
             char FM = (char) 254;
             char VM = (char) 253;
@@ -117,7 +133,7 @@ public class CallAPIController {
             String[] dataArray = data.split("[" + FM + "^]");
             t24DataModel.endPointName = dataArray[0];
             t24DataModel.requestDataRaw = dataArray[1];
-            t24DataModel.requestData = t24DataModel.requestDataRaw.split("[" + VM + "\\*]");
+            t24DataModel.requestDataArr = t24DataModel.requestDataRaw.split("[" + VM + "\\*]");
             return t24DataModel;
         } catch (Exception e) {
             String errorMess = "GetT24ParamModel: Data from T24 not match with T24ParamModel/" + data + "\n";
@@ -136,9 +152,9 @@ public class CallAPIController {
             while ((line = rd.readLine()) != null)
                 request = String.valueOf(request) + line;
 
-            for (int i = 0; i < t24DataModel.requestData.length; i++) {
+            for (int i = 0; i < t24DataModel.requestDataArr.length; i++) {
                 String tmpStr = "\\[" + i + "\\]";
-                request = request.replaceFirst(tmpStr, t24DataModel.requestData[i]);
+                request = request.replaceFirst(tmpStr, t24DataModel.requestDataArr[i]);
             }
             return request;
         } catch (IOException e) {
@@ -183,7 +199,7 @@ public class CallAPIController {
         }
     }
 
-    public static String GetResponseString(String request) throws Exception {
+    public static String GetResponseString(String request, boolean isFullResponse) throws Exception {
         try {
             LogControl.WriteLog("Request: " + request);
             HttpURLConnection conn = (HttpURLConnection) CreateConnection(url, method);
@@ -197,20 +213,49 @@ public class CallAPIController {
             BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
             String output;
             while ((output = br.readLine()) != null)
-                jsonResponse = String.valueOf(jsonResponse) + output;
+                jsonResponse = String.valueOf(jsonResponse) + output;       
             br.close();
+            if(isFullResponse)
+                return jsonResponse;
+            ///
+            JsonObject jResObj = JsonParser.parseString(jsonResponse).getAsJsonObject();
+            String resBodyKey = String.format(FORMAT_TEMP_RES_BODY, paramModel.endPointName);
+            JsonObject resBody = CustomJsonHandle.GetJsonElementByMultiKey(jResObj, resBodyKey).getAsJsonObject();
+            String result = GetResponseResultByConfig(resBody);
+            ////
             LogControl.WriteLog("Response: " + jsonResponse);
-            return jsonResponse;
+            LogControl.WriteLog("ResBody: " + jsonResponse);
+            return result;
         } catch (Exception e) {
             e.printStackTrace();
             throw e;
         }
     }
+    
+    public static String GetResponseResultByConfig(JsonObject resBody){
+        try {
+            List<String> resParam = ConfigReader.GetResponseConfContent(paramModel.endPointName);
+            List<String> T24FormatResponse = new ArrayList<String>();
+            for (String cItem : resParam) {
+                try {
+                    String item = CustomJsonHandle.GetJsonElementByMultiKey(resBody, cItem).getAsString();
+                    T24FormatResponse.add(item);
+                } catch (Exception e) {
+                    T24FormatResponse.add("");
+                    e.printStackTrace();
+                }
+            }
+            return String.join("*", T24FormatResponse);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 
     public String GetESBResponseStatus(String param, T24ParamModel paramModel)
             throws Exception {
         try {
-            String jsonResponse = GetResponseString(param);
+            String jsonResponse = GetResponseString(param, true);
             JsonObject jObject = JsonParser.parseString(jsonResponse).getAsJsonObject();
             String keyStatus = String.format(FORMAT_TEMP_RES_STATUS, paramModel.endPointName);
             String value = CustomJsonHandle.GetJsonElementByMultiKey(jObject, keyStatus).getAsString();

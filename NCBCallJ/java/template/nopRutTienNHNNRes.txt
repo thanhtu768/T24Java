@@ -1,0 +1,4 @@
+functionCode
+twsFlexStatus.transactionId
+twsFlexStatus.successIndicator
+id

@@ -18,7 +18,9 @@
         },
         "bodyReq": {
             "functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24",
-            "id": "[0]"
+            "columnName": "ID",
+            "criteriaValue": "[0]",
+            "operand": "EQ"
         }
     }
 }
