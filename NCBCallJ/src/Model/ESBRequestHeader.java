@@ -3,7 +3,7 @@ package Model;
 import com.google.gson.Gson;
 
 public class ESBRequestHeader {
-    public CommonInfo common = new CommonInfo();
+    public CommonInfoESB common = new CommonInfoESB();
     public ClientESB client = new ClientESB();
 
     public String toJson(){

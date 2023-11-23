@@ -31,6 +31,7 @@ public class ConfigReader
     public static String FORMAT_CNF_URL = "endPoint.%s.url";
     public static String FORMAT_CNF_METHOD = "endPoint.%s.method";
     public static String FORMAT_CNF_FILE = "endPoint.%s.templateFile";
+    public static String FORMAT_CNF_ESB = "endPoint.%s.esb";
     public static String FORMAT_CNF_FILE_RES = "endPoint.%s.templateFileResponse";
      
     public static void ParserJson() throws Exception
@@ -63,18 +64,27 @@ public class ConfigReader
         } 
     }
 
-    public static String GetJsonConfigByMultiKey(String kName) throws Exception
-    {
-
+    public static String GetJsonConfigByMultiKey(String kName)
+    { 
+        String kValue;
+        JsonObject jObject = new JsonObject();
         try 
         {  
-                      
-            String kValue;
-            JsonObject jObject = GetAppConfig();
+            jObject = GetAppConfig();
             kValue = CustomJsonHandle.GetJsonElementByMultiKey(jObject, kName).getAsString();
             return kValue;
-        } catch (JsonIOException | JsonSyntaxException | IOException e) {
-            throw e;
+        } catch (Exception e) {
+            e.printStackTrace();
+            LogControl.WriteStackTrace(e);
+            try 
+            {
+                kValue = CustomJsonHandle.GetJsonElementByMultiKey(jObject, kName).toString();
+                return kValue;
+            } catch (Exception ex) {
+                e.printStackTrace();
+                LogControl.WriteStackTrace(ex);
+            }
+            return null;
         }
     }
 

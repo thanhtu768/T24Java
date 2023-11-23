@@ -21,7 +21,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 import Model.ClientESB;
-import Model.CommonInfo;
+import Model.CommonInfoESB;
 import Model.ESBRequestHeader;
 import Model.T24ParamModel;
 
@@ -37,34 +37,23 @@ public class CallAPIController {
     public static String FORMAT_TEMP_RES_STATUS = "%sres.responseStatus.status";
     public static String FORMAT_TEMP_RES_BODY = "%sRes.bodyRes";
 
-    static String strUrl, method, request;
+    static String strUrl, method, request, esb;
     static URL url;
     public static T24ParamModel paramModel = new T24ParamModel();
-
-    static void SetInputCommonData(String data) throws Exception {
-        LogControl.WriteLog(data);
-        paramModel = GetT24ParamModel(data);
-        strUrl = ConfigReader
-                .GetJsonConfigByMultiKey(String.format(ConfigReader.FORMAT_CNF_URL, paramModel.endPointName));
-        method = ConfigReader
-                .GetJsonConfigByMultiKey(String.format(ConfigReader.FORMAT_CNF_METHOD, paramModel.endPointName));
-        url = new URL(strUrl);
-    }
 
     /**
      * 
      * @param data T24 sample:
      *             nopRutTienNHNN^param1*param2*param3*param4*...
-     *             Example:nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20230909*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
-     * 
+     *             Example:nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20230909*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001 
      * @return response raw data / Json response
      */
 
     public static String CallESBRestAPI(String data) {
         try {
             SetInputCommonData(data);
-            request = BuildRequestFromTempData(paramModel);
             request = GetESBRequestHeader(request);
+            request = BuildRequestFromTempData(paramModel);
             return GetResponseString(request, false);
         } catch (Exception e) {
             e.printStackTrace();
@@ -73,7 +62,7 @@ public class CallAPIController {
         }
     }
 
-     public static String CallESBRestAPIFullResponse(String data) {
+     public static String CallESB_UseFullResponse(String data) {
         try {
             SetInputCommonData(data);
             request = BuildRequestFromTempData(paramModel);
@@ -92,12 +81,12 @@ public class CallAPIController {
      * @return
      * @throws Exception
      */
-    public static String CallESBRestAPIWithoutTemplate(String data) throws Exception {
+    public static String CallESB_UseBodyRequest(String data) throws Exception {
         try {
             SetInputCommonData(data);
             ESBRequestHeader reqHeaderObj = GetESBRequestHeader();
             String reqHeader = reqHeaderObj.toJson();
-            request = BuildRequestFromObjectData(reqHeader, paramModel.requestDataRaw);
+            request = BuildRequestFromStringData(reqHeader, paramModel.requestDataRaw);
             return GetResponseString(request, false);
         } catch (Exception e) {
             e.printStackTrace();
@@ -112,7 +101,7 @@ public class CallAPIController {
      * @return
      * @throws Exception
      */
-    public static String CallRestAPIByFullJsonRequestData(String data) throws Exception {
+    public static String CallESB_UseFullRequest(String data) throws Exception {
         try {
             SetInputCommonData(data);
             request = paramModel.requestDataRaw;
@@ -122,6 +111,18 @@ public class CallAPIController {
             LogControl.WriteStackTrace(e);
             throw e;
         }
+    }
+
+    static void SetInputCommonData(String data) throws Exception {
+        LogControl.WriteLog(data);
+        paramModel = GetT24ParamModel(data);
+        strUrl = ConfigReader
+                .GetJsonConfigByMultiKey(String.format(ConfigReader.FORMAT_CNF_URL, paramModel.endPointName));
+        method = ConfigReader
+                .GetJsonConfigByMultiKey(String.format(ConfigReader.FORMAT_CNF_METHOD, paramModel.endPointName));
+        url = new URL(strUrl);
+        esb = ConfigReader
+                .GetJsonConfigByMultiKey(String.format(ConfigReader.FORMAT_CNF_ESB, paramModel.endPointName));
     }
 
     public static T24ParamModel GetT24ParamModel(String data) {
@@ -154,8 +155,9 @@ public class CallAPIController {
 
             for (int i = 0; i < t24DataModel.requestDataArr.length; i++) {
                 String tmpStr = "\\[" + i + "\\]";
-                request = request.replaceFirst(tmpStr, t24DataModel.requestDataArr[i]);
+                request = request.replace(tmpStr, t24DataModel.requestDataArr[i]);
             }
+            rd.close();
             return request;
         } catch (IOException e) {
             e.printStackTrace();
@@ -163,7 +165,7 @@ public class CallAPIController {
         }
     }
 
-    public static String BuildRequestFromObjectData(String header, String body) throws Exception {
+    public static String BuildRequestFromStringData(String header, String body) throws Exception {
         try {
             Gson gson = new Gson();
             String rootName = String.format(FORMART_REQ_ROOT_NAME, paramModel.endPointName);
@@ -278,8 +280,8 @@ public class CallAPIController {
         }
     }
 
-    public static CommonInfo GetCommonInfo() throws Exception {
-        CommonInfo common = new CommonInfo();
+    public static CommonInfoESB GetCommonInfoESB() throws Exception {
+        CommonInfoESB common = new CommonInfoESB();
         common.serviceVersion = ConfigReader.GetJsonConfigByMultiKey("connection.esb.serviceVersion");
         common.messageId = UUID.randomUUID().toString();
         common.transactionId = UUID.randomUUID().toString();
@@ -290,7 +292,12 @@ public class CallAPIController {
 
     public static ESBRequestHeader GetESBRequestHeader() throws Exception {
         ESBRequestHeader header = new ESBRequestHeader();
-        header.common = GetCommonInfo();
+        header.common = GetCommonInfoESB();
+        if(esb != null)
+        {
+            Gson gson = new Gson();
+            header.client = gson.fromJson(esb, ClientESB.class);
+        }
         header.client = GetClientInfo();
         return header;
     }

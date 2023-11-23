@@ -1,6 +1,6 @@
 package Model;
 
-public class CommonInfo {
+public class CommonInfoESB {
     public String serviceVersion;
     public String messageId;
     public String transactionId;
