@@ -1,0 +1,5 @@
+getCustomerInfoByIdRes.responseStatus.status
+getCustomerInfoByIdRes.responseStatus.globalErrorCode
+getCustomerInfoByIdRes.responseStatus.globalErrorDescription
+getCustomerInfoByIdRes.bodyRes.cifByLegalDetailType.id
+getCustomerInfoByIdRes.bodyRes.cifByLegalDetailType.name

@@ -1,0 +1,6 @@
+trangThaiAnChiRes.responseStatus.status
+trangThaiAnChiRes.responseStatus.globalErrorCode
+trangThaiAnChiRes.responseStatus.globalErrorDescription
+trangThaiAnChiRes.bodyRes.serial
+trangThaiAnChiRes.bodyRes.com
+trangThaiAnChiRes.bodyRes.status

@@ -74,14 +74,12 @@ public class ConfigReader
             kValue = CustomJsonHandle.GetJsonElementByMultiKey(jObject, kName).getAsString();
             return kValue;
         } catch (Exception e) {
-            e.printStackTrace();
-            LogControl.WriteStackTrace(e);
             try 
             {
                 kValue = CustomJsonHandle.GetJsonElementByMultiKey(jObject, kName).toString();
                 return kValue;
             } catch (Exception ex) {
-                e.printStackTrace();
+                ex.printStackTrace();
                 LogControl.WriteStackTrace(ex);
             }
             return null;

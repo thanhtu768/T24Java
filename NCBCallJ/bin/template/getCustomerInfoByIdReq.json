@@ -1,0 +1,24 @@
+{
+    "getCustomerInfoByIdReq": {
+        "header": {
+            "common": {
+                "serviceVersion": "[H1]",
+                "messageId": "[H2]",
+                "transactionId": "[H3]",
+                "messageTimestamp": "[H4]"
+            },
+            "client": {
+                "sourceAppID": "[H5]",
+                "targetAppIDs": "[H6]",
+                "userDetail": {
+                    "userID": "[H7]",
+                    "userPassword": "[H8]"
+                }
+            }
+        },
+        "bodyReq": {
+            "functionCode": "FLEXCASH-GETCUSTOMERINFOBYID-SOAP-T24",
+            "id": "[0]"
+        }
+    }
+}

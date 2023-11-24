@@ -1,26 +1,9 @@
-{
-    "getFlexTransInfoByIdReq": {
-        "header": {
-            "common": {
-                "serviceVersion": "[serviceVersion]",
-                "messageId": "[messageId]",
-                "transactionId": "[transactionId]",
-                "messageTimestamp": "[messageTimestamp]"
-            },
-            "client": {
-                "sourceAppID": "[sourceAppID]",
-                "targetAppIDs": "[targetAppIDs]",
-                "userDetail": {
-                    "userID": "[userID]",
-                    "userPassword": "[userPassword]"
-                }
-            }
-        },
-        "bodyReq": {
-            "functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24",
-            "columnName": "ID",
-            "criteriaValue": "[0]",
-            "operand": "EQ"
-        }
-    }
-}
+getFlexTransInfoByIdRes.responseStatus.status
+getFlexTransInfoByIdRes.responseStatus.globalErrorCode
+getFlexTransInfoByIdRes.responseStatus.globalErrorDescription
+getFlexTransInfoByIdRes.bodyRes.flexTransInfoDetailType.id
+getFlexTransInfoByIdRes.bodyRes.flexTransInfoDetailType.application
+getFlexTransInfoByIdRes.bodyRes.flexTransInfoDetailType.t24Id
+getFlexTransInfoByIdRes.bodyRes.flexTransInfoDetailType.t24TransDate
+getFlexTransInfoByIdRes.bodyRes.flexTransInfoDetailType.flexInput
+getFlexTransInfoByIdRes.bodyRes.flexTransInfoDetailType.flexAuth
