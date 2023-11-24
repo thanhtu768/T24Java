@@ -1,0 +1,144 @@
+Nov 03, 2023 10:31:11 AM LogControl WriteLog
+INFO: 
+2023-11-03 10:31:11: getFlexTransInfoById^tult-FLEX-TEST9443C14*BIEN2
+Nov 03, 2023 10:31:51 AM LogControl WriteLog
+INFO: 
+2023-11-03 10:31:11: Request: {    "getFlexTransInfoByIdReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "53383b6a-4cd9-403e-9e0c-556a4d1a554c",                "transactionId": "6694d533-aa92-4b00-907c-b007345de7b4",                "messageTimestamp": "2023-11-03 10:31:02"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24",            "columnName": "ID",            "criteriaValue": "tult-FLEX-TEST9443C14",            "operand": "EQ"        }    }}
+Nov 03, 2023 10:48:30 AM LogControl WriteLog
+INFO: 
+2023-11-03 10:31:11: Response: {"getFlexTransInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"53383b6a-4cd9-403e-9e0c-556a4d1a554c","transactionId":"6694d533-aa92-4b00-907c-b007345de7b4","messageTimestamp":"2023-11-03 10:31:02"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":["IDID\/APPLICATIONAPPLICATION\/T24.IDT24.ID\/T24.TRANS.DATET24.TRANS.DATE\/FLEX.INPUTFLEX.INPUT\/FLEX.AUTHFLEX.AUTH","No records were found that matched the selection criteria"]},"flexTransInfoDetailType":{}}}}
+Nov 03, 2023 10:51:07 AM LogControl WriteLog
+INFO: 
+2023-11-03 10:51:07: getFlexTransInfoById^tult-FLEX-TEST9443C14
+Nov 03, 2023 10:51:07 AM LogControl WriteLog
+INFO: 
+2023-11-03 10:51:07: Request: {    "getFlexTransInfoByIdReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "10989c7f-6d65-4f7b-b313-b200ad963c1a",                "transactionId": "203a1751-c276-4a1c-9287-693079ae1c51",                "messageTimestamp": "2023-11-03 10:51:05"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24",            "id": "tult-FLEX-TEST9443C14"        }    }}
+
+2023-11-03 10:51:07  com.google.gson.JsonSyntaxException: java.io.IOException: Stream closed
+	at com.google.gson.Gson.fromJson(Gson.java:1241)
+	at com.google.gson.Gson.fromJson(Gson.java:1137)
+	at com.google.gson.Gson.fromJson(Gson.java:1075)
+	at CallAPIController.GetResponseString(CallAPIController.java:218)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:58)
+	at App.main(App.java:14)
+Caused by: java.io.IOException: Stream closed
+	at java.io.BufferedReader.ensureOpen(BufferedReader.java:122)
+	at java.io.BufferedReader.read(BufferedReader.java:278)
+	at com.google.gson.stream.JsonReader.fillBuffer(JsonReader.java:1351)
+	at com.google.gson.stream.JsonReader.nextNonWhitespace(JsonReader.java:1389)
+	at com.google.gson.stream.JsonReader.consumeNonExecutePrefix(JsonReader.java:1667)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:543)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:433)
+	at com.google.gson.Gson.fromJson(Gson.java:1224)
+	... 5 more
+Nov 03, 2023 10:51:20 AM LogControl WriteLog
+INFO: 
+2023-11-03 10:51:19: getFlexTransInfoById^tult-FLEX-TEST9443C14
+Nov 03, 2023 10:51:25 AM LogControl WriteLog
+INFO: 
+2023-11-03 10:51:19: Request: {    "getFlexTransInfoByIdReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "d352932d-c362-439d-8a73-ee562e2d5b1b",                "transactionId": "05c2d4f5-f6b1-47cf-9da0-f07a72de3e00",                "messageTimestamp": "2023-11-03 10:51:14"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24",            "id": "tult-FLEX-TEST9443C14"        }    }}
+
+2023-11-03 10:51:19  com.google.gson.JsonSyntaxException: java.io.IOException: Stream closed
+	at com.google.gson.Gson.fromJson(Gson.java:1241)
+	at com.google.gson.Gson.fromJson(Gson.java:1137)
+	at com.google.gson.Gson.fromJson(Gson.java:1075)
+	at CallAPIController.GetResponseString(CallAPIController.java:218)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:58)
+	at App.main(App.java:14)
+Caused by: java.io.IOException: Stream closed
+	at java.io.BufferedReader.ensureOpen(BufferedReader.java:122)
+	at java.io.BufferedReader.read(BufferedReader.java:278)
+	at com.google.gson.stream.JsonReader.fillBuffer(JsonReader.java:1351)
+	at com.google.gson.stream.JsonReader.nextNonWhitespace(JsonReader.java:1389)
+	at com.google.gson.stream.JsonReader.consumeNonExecutePrefix(JsonReader.java:1667)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:543)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:433)
+	at com.google.gson.Gson.fromJson(Gson.java:1224)
+	... 5 more
+Nov 03, 2023 10:53:25 AM LogControl WriteLog
+INFO: 
+2023-11-03 10:53:25: getFlexTransInfoById^tult-FLEX-TEST9443C14
+Nov 03, 2023 10:53:25 AM LogControl WriteLog
+INFO: 
+2023-11-03 10:53:25: Request: {    "getFlexTransInfoByIdReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "4bfcabb0-b415-4d0c-8ee4-f7ea40bd0ad7",                "transactionId": "134deedb-5cdd-48a0-a56c-746381cc4dd4",                "messageTimestamp": "2023-11-03 10:53:23"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24",            "id": "tult-FLEX-TEST9443C14"        }    }}
+
+2023-11-03 10:53:25  com.google.gson.JsonSyntaxException: java.io.IOException: Stream closed
+	at com.google.gson.Gson.fromJson(Gson.java:1241)
+	at com.google.gson.Gson.fromJson(Gson.java:1137)
+	at com.google.gson.Gson.fromJson(Gson.java:1075)
+	at CallAPIController.GetResponseString(CallAPIController.java:219)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:14)
+Caused by: java.io.IOException: Stream closed
+	at java.io.BufferedReader.ensureOpen(BufferedReader.java:122)
+	at java.io.BufferedReader.read(BufferedReader.java:278)
+	at com.google.gson.stream.JsonReader.fillBuffer(JsonReader.java:1351)
+	at com.google.gson.stream.JsonReader.nextNonWhitespace(JsonReader.java:1389)
+	at com.google.gson.stream.JsonReader.consumeNonExecutePrefix(JsonReader.java:1667)
+	at com.google.gson.stream.JsonReader.doPeek(JsonReader.java:543)
+	at com.google.gson.stream.JsonReader.peek(JsonReader.java:433)
+	at com.google.gson.Gson.fromJson(Gson.java:1224)
+	... 5 more
+Nov 03, 2023 10:57:39 AM LogControl WriteLog
+INFO: 
+2023-11-03 10:57:39: getFlexTransInfoById^tult-FLEX-TEST9443C14
+Nov 03, 2023 10:57:39 AM LogControl WriteLog
+INFO: 
+2023-11-03 10:57:39: Request: {    "getFlexTransInfoByIdReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "dad1c7ca-b4f2-4319-80fd-b14ceac11592",                "transactionId": "41d702ec-77a3-437b-a1e8-1acf9dc38a31",                "messageTimestamp": "2023-11-03 10:57:38"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24",            "id": "tult-FLEX-TEST9443C14"        }    }}
+
+2023-11-03 10:57:39  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:17)
+	at CallAPIController.GetResponseString(CallAPIController.java:219)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:14)
+Nov 03, 2023 11:00:24 AM LogControl WriteLog
+INFO: 
+2023-11-03 11:00:24: getFlexTransInfoById^tult-FLEX-TEST9443C14
+Nov 03, 2023 11:00:24 AM LogControl WriteLog
+INFO: 
+2023-11-03 11:00:24: Request: {    "getFlexTransInfoByIdReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "f3541f28-8909-444c-9ec2-3009b33fdb41",                "transactionId": "694d2177-2766-40ec-a31c-d2106c5981b7",                "messageTimestamp": "2023-11-03 11:00:22"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24",            "id": "tult-FLEX-TEST9443C14"        }    }}
+
+2023-11-03 11:00:24  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:17)
+	at CallAPIController.GetResponseString(CallAPIController.java:219)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:14)
+Nov 03, 2023 11:04:49 AM LogControl WriteLog
+INFO: 
+2023-11-03 11:04:49: getFlexTransInfoById^tult-FLEX-TEST9443C14
+Nov 03, 2023 11:04:49 AM LogControl WriteLog
+INFO: 
+2023-11-03 11:04:49: Request: {    "getFlexTransInfoByIdReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "e0c15f70-1ed0-4020-bfd4-4533c1bc924c",                "transactionId": "141532bb-c4a9-42ef-9523-1f7827729a64",                "messageTimestamp": "2023-11-03 11:04:47"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24",            "id": "tult-FLEX-TEST9443C14"        }    }}
+
+2023-11-03 11:04:49  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:17)
+	at CallAPIController.GetResponseString(CallAPIController.java:219)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:14)
+Nov 03, 2023 11:09:39 AM LogControl WriteLog
+INFO: 
+2023-11-03 11:09:39: getFlexTransInfoById^tult-FLEX-TEST9443C14
+Nov 03, 2023 11:09:39 AM LogControl WriteLog
+INFO: 
+2023-11-03 11:09:39: Request: {    "getFlexTransInfoByIdReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "e4d9eac9-4578-4ac3-bf1b-0fd85db97825",                "transactionId": "e719551b-ea57-4928-afe3-4fb8af188c9a",                "messageTimestamp": "2023-11-03 11:09:37"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24",            "id": "tult-FLEX-TEST9443C14"        }    }}
+
+2023-11-03 11:09:39  java.lang.IllegalStateException: Not a JSON Object: null
+	at com.google.gson.JsonElement.getAsJsonObject(JsonElement.java:101)
+	at CallAPIController.GetResponseString(CallAPIController.java:217)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:14)
+Nov 03, 2023 11:10:10 AM LogControl WriteLog
+INFO: 
+2023-11-03 11:10:10: getFlexTransInfoById^tult-FLEX-TEST9443C14
+Nov 03, 2023 11:10:10 AM LogControl WriteLog
+INFO: 
+2023-11-03 11:10:10: Request: {    "getFlexTransInfoByIdReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "2f6942a6-ecf6-44c4-8879-42fe0a6da6d7",                "transactionId": "3cf192c2-83a2-46b8-8761-d23de4ea9781",                "messageTimestamp": "2023-11-03 11:10:09"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24",            "id": "tult-FLEX-TEST9443C14"        }    }}
+Nov 03, 2023 11:10:11 AM LogControl WriteLog
+INFO: 
+2023-11-03 11:10:10: Response: {"getFlexTransInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"2f6942a6-ecf6-44c4-8879-42fe0a6da6d7","transactionId":"3cf192c2-83a2-46b8-8761-d23de4ea9781","messageTimestamp":"2023-11-03 11:10:09"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":[]},"flexTransInfoDetailType":{"id":"tult-FLEX-TEST9443C14","application":"TELLER,FC.NOPTM.CP","t24Id":"TT23252M6H6J","t24TransDate":"20230909","flexInput":"FLEXID","flexAuth":"FLEXID234556"}}}}
+Nov 03, 2023 11:10:32 AM LogControl WriteLog
+INFO: 
+2023-11-03 11:10:32: getFlexTransInfoById^tult-FLEX-TEST9443C14
+Nov 03, 2023 11:10:32 AM LogControl WriteLog
+INFO: 
+2023-11-03 11:10:32: Request: {    "getFlexTransInfoByIdReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "9f1c9b55-8811-488c-a4ea-da7b3822716b",                "transactionId": "bf6a138a-a288-49f9-832d-462a055988c8",                "messageTimestamp": "2023-11-03 11:10:29"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24",            "id": "tult-FLEX-TEST9443C14"        }    }}

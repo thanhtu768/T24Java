@@ -1,0 +1,186 @@
+Nov 22, 2023 9:49:59 AM LogControl WriteLog
+INFO: 
+2023-11-22 09:49:59: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+Nov 22, 2023 9:49:59 AM LogControl WriteLog
+INFO: 
+2023-11-22 09:49:59: Request: {    "nopRutTienNHNNReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "5fce00fc-3d6d-498a-8b88-89feb03288f0",                "transactionId": "1d979b2e-a28c-43e5-9a19-82c2c7efb8ed",                "messageTimestamp": "2023-11-22 09:49:59"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq":         {            "functionCode": "FLEXCASH-NOPRUTTIENNHNN-SOAP-T24",            "flexId": "ID.FLEX1141",            "flexInput": "USER1",            "flexAuth": "USER2",            "debitAccount": {                "acctNo": "VND12501000100011",                "currency": "VND",                "amount": "50000000",                "valueDate": "20231007"            },            "creditAccount": {                "acctNo": "500000000224"            },            "orderingCust": "CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "paymentDetails": "Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "profitCentreDept": "9001",            "company": "VN0010001"        }    }}
+Nov 22, 2023 9:50:02 AM LogControl WriteLog
+INFO: 
+2023-11-22 09:49:59: Response: {"nopRutTienNHNNRes":{"header":{"common":{"serviceVersion":"1","messageId":"5fce00fc-3d6d-498a-8b88-89feb03288f0","transactionId":"1d979b2e-a28c-43e5-9a19-82c2c7efb8ed","messageTimestamp":"2023-11-22 09:49:59"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"1","globalErrorCode":"004","globalErrorDescription":"Error in Backend"},"bodyRes":{"functionCode":"FLEXCASH-NOPRUTTIENNHNN-SOAP-T24","twsFlexStatus":{"transactionId":"FT23296GP02W","successIndicator":"T24Error","messages":["NCBF.REF.INFO:1:1=INPUT MISSING"]}}}}
+Nov 22, 2023 9:50:02 AM LogControl WriteLog
+INFO: 
+2023-11-22 09:49:59: ResBody: {"nopRutTienNHNNRes":{"header":{"common":{"serviceVersion":"1","messageId":"5fce00fc-3d6d-498a-8b88-89feb03288f0","transactionId":"1d979b2e-a28c-43e5-9a19-82c2c7efb8ed","messageTimestamp":"2023-11-22 09:49:59"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"1","globalErrorCode":"004","globalErrorDescription":"Error in Backend"},"bodyRes":{"functionCode":"FLEXCASH-NOPRUTTIENNHNN-SOAP-T24","twsFlexStatus":{"transactionId":"FT23296GP02W","successIndicator":"T24Error","messages":["NCBF.REF.INFO:1:1=INPUT MISSING"]}}}}
+Nov 22, 2023 11:43:39 AM LogControl WriteLog
+INFO: 
+2023-11-22 11:43:39: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-22 11:43:39  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:75)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:53)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:66)
+	at App.main(App.java:14)
+Nov 22, 2023 11:44:59 AM LogControl WriteLog
+INFO: 
+2023-11-22 11:44:59: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-22 11:44:59  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:75)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:53)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:66)
+	at App.main(App.java:14)
+Nov 22, 2023 11:45:21 AM LogControl WriteLog
+INFO: 
+2023-11-22 11:45:21: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-22 11:45:21  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:75)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:53)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:66)
+	at App.main(App.java:14)
+Nov 22, 2023 11:46:23 AM LogControl WriteLog
+INFO: 
+2023-11-22 11:46:23: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-22 11:46:23  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:75)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:53)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:66)
+	at App.main(App.java:14)
+Nov 22, 2023 11:48:57 AM LogControl WriteLog
+INFO: 
+2023-11-22 11:48:57: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-22 11:48:57  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:75)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:53)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:66)
+	at App.main(App.java:14)
+Nov 22, 2023 11:49:36 AM LogControl WriteLog
+INFO: 
+2023-11-22 11:49:35: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-22 11:49:35  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:75)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:53)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:66)
+	at App.main(App.java:14)
+Nov 22, 2023 11:49:56 AM LogControl WriteLog
+INFO: 
+2023-11-22 11:49:56: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-22 11:49:56  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:75)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:53)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:66)
+	at App.main(App.java:14)
+Nov 22, 2023 11:51:01 AM LogControl WriteLog
+INFO: 
+2023-11-22 11:51:01: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-22 11:51:01  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:75)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:53)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:66)
+	at App.main(App.java:14)
+Nov 22, 2023 11:58:21 AM LogControl WriteLog
+INFO: 
+2023-11-22 11:58:21: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-22 11:58:21  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:73)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:53)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:66)
+	at App.main(App.java:14)
+Nov 22, 2023 11:58:50 AM LogControl WriteLog
+INFO: 
+2023-11-22 11:58:50: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-22 11:58:50  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:73)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:53)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:66)
+	at App.main(App.java:14)
+Nov 22, 2023 11:59:06 AM LogControl WriteLog
+INFO: 
+2023-11-22 11:59:06: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-22 11:59:06  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:73)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:53)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:66)
+	at App.main(App.java:14)
+Nov 22, 2023 12:00:18 PM LogControl WriteLog
+INFO: 
+2023-11-22 12:00:18: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-22 12:00:18  java.net.MalformedURLException: no protocol: "https://ibmbdev.ncb-bank.vn/esbuat7800/flexCashService/v1/nopRutTienNHNN"
+	at java.net.URL.<init>(URL.java:610)
+	at java.net.URL.<init>(URL.java:507)
+	at java.net.URL.<init>(URL.java:456)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:51)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:66)
+	at App.main(App.java:14)
+Nov 22, 2023 12:00:29 PM LogControl WriteLog
+INFO: 
+2023-11-22 12:00:29: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-22 12:00:29  java.net.MalformedURLException: no protocol: "https://ibmbdev.ncb-bank.vn/esbuat7800/flexCashService/v1/nopRutTienNHNN"
+	at java.net.URL.<init>(URL.java:610)
+	at java.net.URL.<init>(URL.java:507)
+	at java.net.URL.<init>(URL.java:456)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:51)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:66)
+	at App.main(App.java:14)
+Nov 22, 2023 12:00:58 PM LogControl WriteLog
+INFO: 
+2023-11-22 12:00:58: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+Nov 22, 2023 12:06:18 PM LogControl WriteLog
+INFO: 
+2023-11-22 12:06:18: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-22 12:06:18  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:53)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:66)
+	at App.main(App.java:14)
+Nov 22, 2023 12:06:39 PM LogControl WriteLog
+INFO: 
+2023-11-22 12:06:39: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-22 12:06:39  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:53)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:66)
+	at App.main(App.java:14)
+Nov 22, 2023 12:09:27 PM LogControl WriteLog
+INFO: 
+2023-11-22 12:09:27: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-22 12:09:27  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:53)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:66)
+	at App.main(App.java:14)
+Nov 22, 2023 12:16:50 PM LogControl WriteLog
+INFO: 
+2023-11-22 12:09:27: Request: {    "nopRutTienNHNNReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "735703a9-5547-4583-8072-52917843973a",                "transactionId": "aec37552-ab94-4a2f-bb3a-45a479c79de7",                "messageTimestamp": "2023-11-22 12:09:22"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "IZI",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq":         {            "functionCode": "FLEXCASH-NOPRUTTIENNHNN-SOAP-T24",            "flexId": "ID.FLEX1141",            "flexInput": "USER1",            "flexAuth": "USER2",            "debitAccount": {                "acctNo": "VND12501000100011",                "currency": "VND",                "amount": "50000000",                "valueDate": "20231007"            },            "creditAccount": {                "acctNo": "500000000224"            },            "orderingCust": "CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "paymentDetails": "Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "profitCentreDept": "9001",            "company": "VN0010001"        }    }}
+Nov 22, 2023 12:16:51 PM LogControl WriteLog
+INFO: 
+2023-11-22 12:09:27: Response: {"nopRutTienNHNNRes":{"header":{"common":{"serviceVersion":"1","messageId":"735703a9-5547-4583-8072-52917843973a","transactionId":"aec37552-ab94-4a2f-bb3a-45a479c79de7","messageTimestamp":"2023-11-22 12:09:22"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"1","globalErrorCode":"004","globalErrorDescription":"Error in Backend"},"bodyRes":{"functionCode":"FLEXCASH-NOPRUTTIENNHNN-SOAP-T24","twsFlexStatus":{"transactionId":"FT23296MV9GV","successIndicator":"T24Error","messages":["NCBF.REF.INFO:1:1=INPUT MISSING"]}}}}
+Nov 22, 2023 12:16:51 PM LogControl WriteLog
+INFO: 
+2023-11-22 12:09:27: ResBody: {"nopRutTienNHNNRes":{"header":{"common":{"serviceVersion":"1","messageId":"735703a9-5547-4583-8072-52917843973a","transactionId":"aec37552-ab94-4a2f-bb3a-45a479c79de7","messageTimestamp":"2023-11-22 12:09:22"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"1","globalErrorCode":"004","globalErrorDescription":"Error in Backend"},"bodyRes":{"functionCode":"FLEXCASH-NOPRUTTIENNHNN-SOAP-T24","twsFlexStatus":{"transactionId":"FT23296MV9GV","successIndicator":"T24Error","messages":["NCBF.REF.INFO:1:1=INPUT MISSING"]}}}}

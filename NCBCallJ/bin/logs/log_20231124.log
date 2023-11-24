@@ -1,0 +1,280 @@
+Nov 24, 2023 9:22:05 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:22:05: trangThaiAnChi^SM000030
+
+2023-11-24 09:22:05  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:80)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:124)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:53)
+	at App.main(App.java:16)
+Nov 24, 2023 9:22:43 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:22:43: trangThaiAnChi^SM000030
+
+2023-11-24 09:22:43  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:80)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:124)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:53)
+	at App.main(App.java:16)
+
+2023-11-24 09:22:43  java.lang.NullPointerException
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:341)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:55)
+	at App.main(App.java:16)
+Nov 24, 2023 9:23:09 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:23:09: trangThaiAnChi^SM000030
+
+2023-11-24 09:23:09  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:80)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:124)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:53)
+	at App.main(App.java:16)
+Nov 24, 2023 9:25:55 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:25:55: trangThaiAnChi^SM000030
+
+2023-11-24 09:25:55  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:80)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:124)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:53)
+	at App.main(App.java:16)
+Nov 24, 2023 9:26:27 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:25:55: Request: {    "trangThaiAnChiReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "05e6a19a-1e82-4b4e-b1f6-2b5dc32206f0",                "transactionId": "e4893521-1815-4520-8621-6ed29cd49189",                "messageTimestamp": "2023-11-24 09:26:05"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-REST-TRANGTHAIANCHI-BASICAUTH",            "serial": "SM000030"        }    }}
+Nov 24, 2023 9:26:28 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:25:55: Response: {"trangThaiAnChiRes":{"header":{"common":{"serviceVersion":"1","messageId":"05e6a19a-1e82-4b4e-b1f6-2b5dc32206f0","transactionId":"e4893521-1815-4520-8621-6ed29cd49189","messageTimestamp":"2023-11-24 09:26:05"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"1","globalErrorCode":"008","globalErrorDescription":"HTTP\/1.1 404 Not Found"}}}
+Nov 24, 2023 9:26:28 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:25:55: Response Send To T24: 1*008*HTTP/1.1 404 Not Found***
+Nov 24, 2023 9:29:15 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:29:15: trangThaiAnChi^SM000030
+
+2023-11-24 09:29:15  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:80)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:124)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:53)
+	at App.main(App.java:16)
+Nov 24, 2023 9:51:23 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:29:15: Request: {    "trangThaiAnChiReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "cf1923d8-c67f-43fc-b74f-e8d0ed3044aa",                "transactionId": "a21a1d82-a365-4422-95cd-bca50397b827",                "messageTimestamp": "2023-11-24 09:29:18"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-REST-TRANGTHAIANCHI-BASICAUTH",            "serial": "SM000030"        }    }}
+Nov 24, 2023 9:51:24 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:29:15: Response: {"trangThaiAnChiRes":{"header":{"common":{"serviceVersion":"1","messageId":"cf1923d8-c67f-43fc-b74f-e8d0ed3044aa","transactionId":"a21a1d82-a365-4422-95cd-bca50397b827","messageTimestamp":"2023-11-24 09:29:18"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"1","globalErrorCode":"008","globalErrorDescription":"HTTP\/1.1 404 Not Found"}}}
+Nov 24, 2023 9:51:24 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:29:15: Response Send To T24: 1*008*HTTP/1.1 404 Not Found***
+Nov 24, 2023 9:51:31 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:51:31: trangThaiAnChi^SM000030
+
+2023-11-24 09:51:31  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:80)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:125)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:54)
+	at App.main(App.java:16)
+Nov 24, 2023 9:51:39 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:51:31: Request: {    "trangThaiAnChiReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "469d5286-4e9a-434a-9ec5-e011bbf9df5f",                "transactionId": "2b747097-2aef-4770-aef7-810cf1201f7f",                "messageTimestamp": "2023-11-24 09:51:39"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-REST-TRANGTHAIANCHI-BASICAUTH",            "serial": "SM000030"        }    }}
+Nov 24, 2023 9:51:40 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:51:31: Response: {"trangThaiAnChiRes":{"header":{"common":{"serviceVersion":"1","messageId":"469d5286-4e9a-434a-9ec5-e011bbf9df5f","transactionId":"2b747097-2aef-4770-aef7-810cf1201f7f","messageTimestamp":"2023-11-24 09:51:39"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"1","globalErrorCode":"008","globalErrorDescription":"HTTP\/1.1 404 Not Found"}}}
+Nov 24, 2023 9:51:40 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:51:31: Response Send To T24: 1*008*HTTP/1.1 404 Not Found***
+Nov 24, 2023 9:52:02 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:52:02: trangThaiAnChi^SM000030
+
+2023-11-24 09:52:02  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:80)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:125)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:54)
+	at App.main(App.java:16)
+Nov 24, 2023 9:53:40 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:52:02: Request: {    "trangThaiAnChiReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "76e1234e-589d-417a-8a3d-457d9901c26b",                "transactionId": "a43cfe8c-46ac-44fb-b33d-0f2e20c4eb95",                "messageTimestamp": "2023-11-24 09:52:05"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-REST-TRANGTHAIANCHI-BASICAUTH",            "serial": "SM000030"        }    }}
+Nov 24, 2023 9:53:40 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:52:02: Response: {"trangThaiAnChiRes":{"header":{"common":{"serviceVersion":"1","messageId":"76e1234e-589d-417a-8a3d-457d9901c26b","transactionId":"a43cfe8c-46ac-44fb-b33d-0f2e20c4eb95","messageTimestamp":"2023-11-24 09:52:05"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"1","globalErrorCode":"008","globalErrorDescription":"HTTP\/1.1 404 Not Found"}}}
+Nov 24, 2023 9:53:40 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:52:02: Response Send To T24: 1*008*HTTP/1.1 404 Not Found***
+Nov 24, 2023 9:53:45 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:53:45: trangThaiAnChi^SM000030
+
+2023-11-24 09:53:45  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:80)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:125)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:54)
+	at App.main(App.java:16)
+Nov 24, 2023 9:53:57 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:53:45: Request: {"trangThaiAnChiReq":{"header":{"common":{"serviceVersion":"1","messageId":"87df9f4d-841e-4901-90f8-f0a7cebf1735","transactionId":"3266c63e-210a-475a-be17-092434181ea9","messageTimestamp":"2023-11-24 09:53:47"},"client":{"sourceAppID":"MB","targetAppIDs":"T24","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM\u003d"}}},"bodyReq":{"functionCode":"FLEXCASH-REST-TRANGTHAIANCHI-BASICAUTH","serial":"SM000030"}}}
+Nov 24, 2023 9:53:58 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:53:45: Response: {"trangThaiAnChiRes":{"header":{"common":{"serviceVersion":"1","messageId":"87df9f4d-841e-4901-90f8-f0a7cebf1735","transactionId":"3266c63e-210a-475a-be17-092434181ea9","messageTimestamp":"2023-11-24 09:53:47"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"1","globalErrorCode":"008","globalErrorDescription":"HTTP\/1.1 404 Not Found"}}}
+Nov 24, 2023 9:53:58 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:53:45: Response Send To T24: 1*008*HTTP/1.1 404 Not Found***
+Nov 24, 2023 9:59:42 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:59:42: trangThaiAnChi^SM000030
+
+2023-11-24 09:59:42  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:80)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:125)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:54)
+	at App.main(App.java:16)
+Nov 24, 2023 10:00:01 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:59:42: Request: {"trangThaiAnChiReq":{"header":{"common":{"serviceVersion":"1","messageId":"faa5223d-5f66-4ef3-9137-6f5f6de5e5a0","transactionId":"7543924a-a3a5-45b8-bb42-90051501bd22","messageTimestamp":"2023-11-24 09:59:50"},"client":{"sourceAppID":"MB","targetAppIDs":"T24","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM\u003d"}}},"bodyReq":{"functionCode":"FLEXCASH-REST-TRANGTHAIANCHI-BASICAUTH","serial":"SM000030"}}}
+Nov 24, 2023 10:00:02 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:59:42: Response: {"trangThaiAnChiRes":{"header":{"common":{"serviceVersion":"1","messageId":"faa5223d-5f66-4ef3-9137-6f5f6de5e5a0","transactionId":"7543924a-a3a5-45b8-bb42-90051501bd22","messageTimestamp":"2023-11-24 09:59:50"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"1","globalErrorCode":"008","globalErrorDescription":"HTTP\/1.1 404 Not Found"}}}
+Nov 24, 2023 10:00:02 AM LogControl WriteLog
+INFO: 
+2023-11-24 09:59:42: Response Send To T24: 1*008*HTTP/1.1 404 Not Found***
+Nov 24, 2023 10:01:40 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:01:40: getFlexTransInfoById^tult-FLEX-TEST9443C14
+
+2023-11-24 10:01:40  java.lang.NullPointerException
+	at CallAPIController.GetESBRequestHeaderV2(CallAPIController.java:365)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:56)
+	at App.main(App.java:16)
+Nov 24, 2023 10:03:12 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:03:12: getFlexTransInfoById^tult-FLEX-TEST9443C14
+Nov 24, 2023 10:03:14 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:03:12: Request: {"getFlexTransInfoByIdReq":{"header":{"common":{"serviceVersion":"1","messageId":"","transactionId":"","messageTimestamp":""},"client":{"sourceAppID":"MB","targetAppIDs":"T24","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM\u003d"}}},"bodyReq":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","id":"tult-FLEX-TEST9443C14"}}}
+Nov 24, 2023 10:03:15 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:03:12: Response: {"getFlexTransInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"","transactionId":"","messageTimestamp":""},"client":{"sourceAppID":"MB","targetAppIDs":"T24","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"1","globalErrorCode":"002","globalErrorDescription":"Invalid input data","errorInfo":[{"errorCode":"201","errorDesc":"Expected Field getFlexTransInfoByIdReq.header.common.messageId is not found"}]}}}
+Nov 24, 2023 10:03:15 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:03:12: Response Send To T24: 1*002*Invalid input data******
+Nov 24, 2023 10:45:26 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:45:26: getFlexTransInfoById^tult-FLEX-TEST9443C14
+Nov 24, 2023 10:45:28 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:45:26: Request: {"getFlexTransInfoByIdReq":{"header":{"common":{"serviceVersion":"1"},"client":{"sourceAppID":"MB","targetAppIDs":"T24","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM\u003d"}}},"bodyReq":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","id":"tult-FLEX-TEST9443C14"}}}
+Nov 24, 2023 10:45:29 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:45:26: Response: {"getFlexTransInfoByIdRes":{"header":{"common":{"serviceVersion":"1"},"client":{"sourceAppID":"MB","targetAppIDs":"T24","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"1","globalErrorCode":"002","globalErrorDescription":"Invalid input data","errorInfo":[{"errorCode":"201","errorDesc":"Expected Field getFlexTransInfoByIdReq.header.common.messageId is not found"}]}}}
+Nov 24, 2023 10:45:29 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:45:26: Response Send To T24: 1*002*Invalid input data******
+Nov 24, 2023 10:45:30 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:45:29: getFlexTransInfoById^tult-FLEX-TEST9443C14
+Nov 24, 2023 10:45:44 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:45:29: Request: {"getFlexTransInfoByIdReq":{"header":{"common":{"serviceVersion":"1"},"client":{"sourceAppID":"MB","targetAppIDs":"T24","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM\u003d"}}},"bodyReq":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","id":"tult-FLEX-TEST9443C14"}}}
+Nov 24, 2023 10:45:45 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:45:29: Response: {"getFlexTransInfoByIdRes":{"header":{"common":{"serviceVersion":"1"},"client":{"sourceAppID":"MB","targetAppIDs":"T24","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"1","globalErrorCode":"002","globalErrorDescription":"Invalid input data","errorInfo":[{"errorCode":"201","errorDesc":"Expected Field getFlexTransInfoByIdReq.header.common.messageId is not found"}]}}}
+Nov 24, 2023 10:45:45 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:45:29: Response Send To T24: 1*002*Invalid input data******
+Nov 24, 2023 10:45:47 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:45:47: getFlexTransInfoById^tult-FLEX-TEST9443C14
+Nov 24, 2023 10:45:49 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:45:47: Request: {"getFlexTransInfoByIdReq":{"header":{"common":{"serviceVersion":"1","messageId":"6095d86e-2df2-42b0-9599-b04015fd5992","transactionId":"2e38f15c-74ce-4240-a618-0a5e1e93926c","messageTimestamp":"2023-11-24 10:45:49"},"client":{"sourceAppID":"MB","targetAppIDs":"T24","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM\u003d"}}},"bodyReq":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","id":"tult-FLEX-TEST9443C14"}}}
+Nov 24, 2023 10:45:49 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:45:47: Response: {"getFlexTransInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"6095d86e-2df2-42b0-9599-b04015fd5992","transactionId":"2e38f15c-74ce-4240-a618-0a5e1e93926c","messageTimestamp":"2023-11-24 10:45:49"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":[]},"flexTransInfoDetailType":{"id":"tult-FLEX-TEST9443C14","application":"TELLER,FC.NOPTM.CP","t24Id":"TT23252M6H6J","t24TransDate":"20230909","flexInput":"FLEXID","flexAuth":"FLEXID234556"}}}}
+Nov 24, 2023 10:45:50 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:45:47: Response Send To T24: 0*000*Successful*tult-FLEX-TEST9443C14*TELLER,FC.NOPTM.CP*TT23252M6H6J*20230909*FLEXID*FLEXID234556
+Nov 24, 2023 10:47:33 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:47:33: getFlexTransInfoById^tult-FLEX-TEST9443C14
+Nov 24, 2023 10:48:26 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:47:33: Request: {"getFlexTransInfoByIdReq":{"header":{"common":{"serviceVersion":"1","messageId":"23e8e8bd-f89c-46e5-b584-7bc8e260290e","transactionId":"ecf02208-fe9f-4f95-82aa-ee538780aba0","messageTimestamp":"2023-11-24 10:47:46"},"client":{"sourceAppID":"MB","targetAppIDs":"T24","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM\u003d"}}},"bodyReq":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","id":"tult-FLEX-TEST9443C14"}}}
+Nov 24, 2023 10:48:27 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:47:33: Response: {"getFlexTransInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"23e8e8bd-f89c-46e5-b584-7bc8e260290e","transactionId":"ecf02208-fe9f-4f95-82aa-ee538780aba0","messageTimestamp":"2023-11-24 10:47:46"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":[]},"flexTransInfoDetailType":{"id":"tult-FLEX-TEST9443C14","application":"TELLER,FC.NOPTM.CP","t24Id":"TT23252M6H6J","t24TransDate":"20230909","flexInput":"FLEXID","flexAuth":"FLEXID234556"}}}}
+Nov 24, 2023 10:48:27 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:47:33: Response Send To T24: 0*000*Successful*tult-FLEX-TEST9443C14*TELLER,FC.NOPTM.CP*TT23252M6H6J*20230909*FLEXID*FLEXID234556
+Nov 24, 2023 10:49:00 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:49:00: getFlexTransInfoById^tult-FLEX-TEST9443C14
+Nov 24, 2023 10:49:03 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:49:00: Request: {"getFlexTransInfoByIdReq":{"header":{"common":{"serviceVersion":"1","messageId":"170324d9-cc2f-47b8-9b3c-7b92d31bc1fc","transactionId":"d1895000-5cfe-4ae6-8aa3-22001713f0bb","messageTimestamp":"2023-11-24 10:49:03"},"client":{"sourceAppID":"MB","targetAppIDs":"T24","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"bodyReq":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","id":"tult-FLEX-TEST9443C14"}}}
+Nov 24, 2023 10:49:03 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:49:00: Response: {"getFlexTransInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"170324d9-cc2f-47b8-9b3c-7b92d31bc1fc","transactionId":"d1895000-5cfe-4ae6-8aa3-22001713f0bb","messageTimestamp":"2023-11-24 10:49:03"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":[]},"flexTransInfoDetailType":{"id":"tult-FLEX-TEST9443C14","application":"TELLER,FC.NOPTM.CP","t24Id":"TT23252M6H6J","t24TransDate":"20230909","flexInput":"FLEXID","flexAuth":"FLEXID234556"}}}}
+Nov 24, 2023 10:49:03 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:49:00: Response Send To T24: 0*000*Successful*tult-FLEX-TEST9443C14*TELLER,FC.NOPTM.CP*TT23252M6H6J*20230909*FLEXID*FLEXID234556
+Nov 24, 2023 10:54:11 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:54:11: getFlexTransInfoById^tult-FLEX-TEST9443C14
+Nov 24, 2023 10:54:13 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:54:11: Request: {"getFlexTransInfoByIdReq":{"header":{"common":{"serviceVersion":"1","messageId":"f84df097-1cab-4359-8ce7-796203396edb","transactionId":"61e503c0-18d4-494e-affe-01699a604303","messageTimestamp":"2023-11-24 10:54:13"},"client":{"sourceAppID":"MB","targetAppIDs":"T24","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"bodyReq":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","id":"tult-FLEX-TEST9443C14"}}}
+Nov 24, 2023 10:54:14 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:54:11: Response: {"getFlexTransInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"f84df097-1cab-4359-8ce7-796203396edb","transactionId":"61e503c0-18d4-494e-affe-01699a604303","messageTimestamp":"2023-11-24 10:54:13"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":[]},"flexTransInfoDetailType":{"id":"tult-FLEX-TEST9443C14","application":"TELLER,FC.NOPTM.CP","t24Id":"TT23252M6H6J","t24TransDate":"20230909","flexInput":"FLEXID","flexAuth":"FLEXID234556"}}}}
+Nov 24, 2023 10:54:14 AM LogControl WriteLog
+INFO: 
+2023-11-24 10:54:11: Response Send To T24: 0*000*Successful*tult-FLEX-TEST9443C14*TELLER,FC.NOPTM.CP*TT23252M6H6J*20230909*FLEXID*FLEXID234556
+Nov 24, 2023 11:00:45 AM LogControl WriteLog
+INFO: 
+2023-11-24 11:00:45: getCustomerInfoById^10230001
+Nov 24, 2023 11:00:45 AM LogControl WriteLog
+INFO: 
+2023-11-24 11:00:45: Request: {"getCustomerInfoByIdReq":{"header":{"common":{"serviceVersion":"1","messageId":"b4a54fec-226d-4e3a-a8d2-6248c639a173","transactionId":"ea413f6c-c3a2-4ec0-8c26-34d1ed8715bc","messageTimestamp":"2023-11-24 11:00:45"},"client":{"sourceAppID":"MB","targetAppIDs":"T24","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"bodyReq":{"functionCode":"FLEXCASH-GETCUSTOMERINFOBYID-SOAP-T24","id":"10230001"}}}
+Nov 24, 2023 11:00:46 AM LogControl WriteLog
+INFO: 
+2023-11-24 11:00:45: Response: {"getCustomerInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"b4a54fec-226d-4e3a-a8d2-6248c639a173","transactionId":"ea413f6c-c3a2-4ec0-8c26-34d1ed8715bc","messageTimestamp":"2023-11-24 11:00:45"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETCUSTOMERINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":[]},"cifByLegalDetailType":{"id":"10230001","name":"CTY BAO DAM AN TOAN HH TAY NAM BO WEST - SOUTHERN MARITIME SAFETY COM PANY","sector":"2100","taxid":"3500101379003","companyBook":"VN0010107","customerStatus":"17","industry":"7200","target":"1","customerType":"","residence":"VN","nationality":"VN","identifyMethod":"","dateOfBirth":"","gender":"","legalDocName":"Business License#LEGAL ID#Passport","legalIdName":"3500101379-003#LegalId.2#LegalId.3","legalIssDate":"20211217#20230915#20230914","legalExpdate":"#20230930#20230930","legalIssAuth":"SO KH&DT TP CAN THO#Legal Iss Auth.2#Legal Iss Auth.3","sms1":"84129238476#8499999999#84044556677","postingRestrict":"","address":"60 LE HONG PHONG PHUONG TRA AN QUAN BINH THUY THANH PHO CAN THO","contactPerson":"GIAM DOC#NGUYEN THI THUY#NGUYEN THANH MAI#PHAM CONG THUAN#LE PHUONG","position":"BUI DUC THANG#PHO PHONG#TRUONG TRONG TAI CHINH- KE TOAN#PHO GIAM DOC#TRUONG PHONG","birthdate":"19650416####","idNum":"079065003888#151817160#151307388#034078006278#211516612","issueDate":"20180509#20130731#20131209#20180117#20110815","placeOfIssue":"CCS#CA THAI BINH#THAI BINH#CUC CANH SAT#BINH DINH"}}}}
+Nov 24, 2023 11:00:46 AM LogControl WriteLog
+INFO: 
+2023-11-24 11:00:45: Response Send To T24: 0*000*Successful*10230001*CTY BAO DAM AN TOAN HH TAY NAM BO WEST - SOUTHERN MARITIME SAFETY COM PANY
+Nov 24, 2023 3:09:34 PM LogControl WriteLog
+INFO: 
+2023-11-24 15:09:34: getCustomerInfoById^10230001
+Nov 24, 2023 3:09:34 PM LogControl WriteLog
+INFO: 
+2023-11-24 15:09:34: Request: {"getCustomerInfoByIdReq":{"header2":{"common":{"serviceVersion":"[H1]","messageId":"[H2]","transactionId":"[H3]","messageTimestamp":"[H4]"},"client":{"sourceAppID":"[H5]","targetAppIDs":"[H6]","userDetail":{"userID":"[H7]","userPassword":"[H8]"}}},"bodyReq":{"functionCode":"FLEXCASH-GETCUSTOMERINFOBYID-SOAP-T24","id":"10230001"},"header":{"common":{"serviceVersion":"1","messageId":"edb0ac51-c645-4653-a8dc-f40e860f157e","transactionId":"8676d262-7bd4-4419-a76e-6bc827dddd53","messageTimestamp":"2023-11-24 15:09:34"},"client":{"sourceAppID":"MB","targetAppIDs":"T24","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}}}}
+Nov 24, 2023 3:09:35 PM LogControl WriteLog
+INFO: 
+2023-11-24 15:09:34: Response: {"getCustomerInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"edb0ac51-c645-4653-a8dc-f40e860f157e","transactionId":"8676d262-7bd4-4419-a76e-6bc827dddd53","messageTimestamp":"2023-11-24 15:09:34"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETCUSTOMERINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":[]},"cifByLegalDetailType":{"id":"10230001","name":"CTY BAO DAM AN TOAN HH TAY NAM BO WEST - SOUTHERN MARITIME SAFETY COM PANY","sector":"2100","taxid":"3500101379003","companyBook":"VN0010107","customerStatus":"17","industry":"7200","target":"1","customerType":"","residence":"VN","nationality":"VN","identifyMethod":"","dateOfBirth":"","gender":"","legalDocName":"Business License#LEGAL ID#Passport","legalIdName":"3500101379-003#LegalId.2#LegalId.3","legalIssDate":"20211217#20230915#20230914","legalExpdate":"#20230930#20230930","legalIssAuth":"SO KH&DT TP CAN THO#Legal Iss Auth.2#Legal Iss Auth.3","sms1":"84129238476#8499999999#84044556677","postingRestrict":"","address":"60 LE HONG PHONG PHUONG TRA AN QUAN BINH THUY THANH PHO CAN THO","contactPerson":"GIAM DOC#NGUYEN THI THUY#NGUYEN THANH MAI#PHAM CONG THUAN#LE PHUONG","position":"BUI DUC THANG#PHO PHONG#TRUONG TRONG TAI CHINH- KE TOAN#PHO GIAM DOC#TRUONG PHONG","birthdate":"19650416####","idNum":"079065003888#151817160#151307388#034078006278#211516612","issueDate":"20180509#20130731#20131209#20180117#20110815","placeOfIssue":"CCS#CA THAI BINH#THAI BINH#CUC CANH SAT#BINH DINH"}}}}
+Nov 24, 2023 3:09:35 PM LogControl WriteLog
+INFO: 
+2023-11-24 15:09:34: Response Send To T24: 0*000*Successful*10230001*CTY BAO DAM AN TOAN HH TAY NAM BO WEST - SOUTHERN MARITIME SAFETY COM PANY
+Nov 24, 2023 3:15:52 PM LogControl WriteLog
+INFO: 
+2023-11-24 15:15:52: getCustomerInfoById^10230001
+Nov 24, 2023 3:15:52 PM LogControl WriteLog
+INFO: 
+2023-11-24 15:15:52: Request: {"getCustomerInfoByIdReq":{"header2":{"common":{"serviceVersion":"[H1]","messageId":"[H2]","transactionId":"[H3]","messageTimestamp":"[H4]"},"client":{"sourceAppID":"[H5]","targetAppIDs":"[H6]","userDetail":{"userID":"[H7]","userPassword":"[H8]"}}},"bodyReq":{"functionCode":"FLEXCASH-GETCUSTOMERINFOBYID-SOAP-T24","id":"10230001"},"header":{"common":{"serviceVersion":"1","messageId":"76794587-0520-481d-8449-a48647110b81","transactionId":"b20b6f11-8d58-4ee1-abf3-4692cd394249","messageTimestamp":"2023-11-24 15:15:52"},"client":{"sourceAppID":"MB","targetAppIDs":"T24","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}}}}
+Nov 24, 2023 3:15:53 PM LogControl WriteLog
+INFO: 
+2023-11-24 15:15:52: Response: {"getCustomerInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"76794587-0520-481d-8449-a48647110b81","transactionId":"b20b6f11-8d58-4ee1-abf3-4692cd394249","messageTimestamp":"2023-11-24 15:15:52"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETCUSTOMERINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":[]},"cifByLegalDetailType":{"id":"10230001","name":"CTY BAO DAM AN TOAN HH TAY NAM BO WEST - SOUTHERN MARITIME SAFETY COM PANY","sector":"2100","taxid":"3500101379003","companyBook":"VN0010107","customerStatus":"17","industry":"7200","target":"1","customerType":"","residence":"VN","nationality":"VN","identifyMethod":"","dateOfBirth":"","gender":"","legalDocName":"Business License#LEGAL ID#Passport","legalIdName":"3500101379-003#LegalId.2#LegalId.3","legalIssDate":"20211217#20230915#20230914","legalExpdate":"#20230930#20230930","legalIssAuth":"SO KH&DT TP CAN THO#Legal Iss Auth.2#Legal Iss Auth.3","sms1":"84129238476#8499999999#84044556677","postingRestrict":"","address":"60 LE HONG PHONG PHUONG TRA AN QUAN BINH THUY THANH PHO CAN THO","contactPerson":"GIAM DOC#NGUYEN THI THUY#NGUYEN THANH MAI#PHAM CONG THUAN#LE PHUONG","position":"BUI DUC THANG#PHO PHONG#TRUONG TRONG TAI CHINH- KE TOAN#PHO GIAM DOC#TRUONG PHONG","birthdate":"19650416####","idNum":"079065003888#151817160#151307388#034078006278#211516612","issueDate":"20180509#20130731#20131209#20180117#20110815","placeOfIssue":"CCS#CA THAI BINH#THAI BINH#CUC CANH SAT#BINH DINH"}}}}
+Nov 24, 2023 3:15:53 PM LogControl WriteLog
+INFO: 
+2023-11-24 15:15:52: Response Send To T24: 0*000*Successful*10230001*CTY BAO DAM AN TOAN HH TAY NAM BO WEST - SOUTHERN MARITIME SAFETY COM PANY
+Nov 24, 2023 3:20:05 PM LogControl WriteLog
+INFO: 
+2023-11-24 15:20:05: getFlexTransInfoById^tult-FLEX-TEST9443C14
+Nov 24, 2023 3:20:05 PM LogControl WriteLog
+INFO: 
+2023-11-24 15:20:05: Request: {"getFlexTransInfoByIdReq":{"header":{"common":{"serviceVersion":"1","messageId":"57b674dd-a328-4d90-9c63-df734055be89","transactionId":"af7521aa-b801-4e0f-ad6d-f053742ce232","messageTimestamp":"2023-11-24 15:20:05"},"client":{"sourceAppID":"MB","targetAppIDs":"T24","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"bodyReq":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","id":"tult-FLEX-TEST9443C14"}}}
+Nov 24, 2023 3:20:06 PM LogControl WriteLog
+INFO: 
+2023-11-24 15:20:05: Response: {"getFlexTransInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"57b674dd-a328-4d90-9c63-df734055be89","transactionId":"af7521aa-b801-4e0f-ad6d-f053742ce232","messageTimestamp":"2023-11-24 15:20:05"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":[]},"flexTransInfoDetailType":{"id":"tult-FLEX-TEST9443C14","application":"TELLER,FC.NOPTM.CP","t24Id":"TT23252M6H6J","t24TransDate":"20230909","flexInput":"FLEXID","flexAuth":"FLEXID234556"}}}}
+Nov 24, 2023 3:20:06 PM LogControl WriteLog
+INFO: 
+2023-11-24 15:20:05: Response Send To T24: 0*000*Successful*tult-FLEX-TEST9443C14*TELLER,FC.NOPTM.CP*TT23252M6H6J*20230909*FLEXID*FLEXID234556

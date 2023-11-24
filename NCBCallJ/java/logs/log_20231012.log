@@ -1,0 +1,9 @@
+Oct 12, 2023 3:42:33 PM LogControl WriteLog
+INFO: 
+2023-10-12 15:42:32: getFlexTransInfoById^tult-FLEX-TEST9443C14*BIEN2
+Oct 12, 2023 3:42:33 PM LogControl WriteLog
+INFO: 
+2023-10-12 15:42:32: Request: {    "getFlexTransInfoByIdReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "5afb30fc-eb3f-4c23-aae5-723be98c6340",                "transactionId": "30ec50fc-9eb3-4994-92f9-3c86f4b5af7b",                "messageTimestamp": "2023-10-12 15:42:32"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24",            "columnName": "ID",            "criteriaValue": "tult-FLEX-TEST9443C14",            "operand": "EQ"        }    }}
+Oct 12, 2023 3:42:33 PM LogControl WriteLog
+INFO: 
+2023-10-12 15:42:32: Response: {"getFlexTransInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"5afb30fc-eb3f-4c23-aae5-723be98c6340","transactionId":"30ec50fc-9eb3-4994-92f9-3c86f4b5af7b","messageTimestamp":"2023-10-12 15:42:32"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":[]},"flexTransInfoDetailType":{"id":"tult-FLEX-TEST9443C14","application":"TELLER,FC.NOPTM.CP","t24Id":"TT23252M6H6J","t24TransDate":"20230909","flexInput":"FLEXID","flexAuth":"FLEXID234556","deptCode":"1"}}}}

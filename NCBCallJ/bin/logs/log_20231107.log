@@ -1,0 +1,126 @@
+Nov 07, 2023 10:57:44 AM LogControl WriteLog
+INFO: 
+2023-11-07 10:57:44: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+Nov 07, 2023 10:57:44 AM LogControl WriteLog
+INFO: 
+2023-11-07 10:57:44: Request: {    "nopRutTienNHNNReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "2000fff5-56f3-4269-a02d-f57a575b7d60",                "transactionId": "d7de79c6-7094-464c-8938-53c960113fad",                "messageTimestamp": "2023-11-07 10:57:44"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq":         {            "functionCode": "FLEXCASH-NOPRUTTIENNHNN-SOAP-T24",            "flexId": "ID.FLEX1141",            "flexInput": "USER1",            "flexAuth": "USER2",            "debitAccount": {                "acctNo": "VND12501000100011",                "currency": "VND",                "amount": "50000000",                "valueDate": "20231007"            },            "creditAccount": {                "acctNo": "500000000224"            },            "orderingCust": "CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "paymentDetails": "Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "profitCentreDept": "9001",            "company": "VN0010001"        }    }}
+
+2023-11-07 10:57:44  java.util.UnknownFormatConversionException: Conversion = 'R'
+	at java.util.Formatter$FormatSpecifier.conversion(Formatter.java:2691)
+	at java.util.Formatter$FormatSpecifier.<init>(Formatter.java:2720)
+	at java.util.Formatter.parse(Formatter.java:2560)
+	at java.util.Formatter.format(Formatter.java:2501)
+	at java.util.Formatter.format(Formatter.java:2455)
+	at java.lang.String.format(String.java:2940)
+	at CallAPIController.GetResponseString(CallAPIController.java:236)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:72)
+	at App.main(App.java:14)
+Nov 07, 2023 10:58:14 AM LogControl WriteLog
+INFO: 
+2023-11-07 10:58:14: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+Nov 07, 2023 10:58:14 AM LogControl WriteLog
+INFO: 
+2023-11-07 10:58:14: Request: {    "nopRutTienNHNNReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "0cfb63e3-257f-4661-9cb0-6a8c97954365",                "transactionId": "f57ac53f-f9d9-4733-951b-88ca8b65db22",                "messageTimestamp": "2023-11-07 10:58:14"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq":         {            "functionCode": "FLEXCASH-NOPRUTTIENNHNN-SOAP-T24",            "flexId": "ID.FLEX1141",            "flexInput": "USER1",            "flexAuth": "USER2",            "debitAccount": {                "acctNo": "VND12501000100011",                "currency": "VND",                "amount": "50000000",                "valueDate": "20231007"            },            "creditAccount": {                "acctNo": "500000000224"            },            "orderingCust": "CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "paymentDetails": "Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "profitCentreDept": "9001",            "company": "VN0010001"        }    }}
+
+2023-11-07 10:58:14  java.util.UnknownFormatConversionException: Conversion = 'R'
+	at java.util.Formatter$FormatSpecifier.conversion(Formatter.java:2691)
+	at java.util.Formatter$FormatSpecifier.<init>(Formatter.java:2720)
+	at java.util.Formatter.parse(Formatter.java:2560)
+	at java.util.Formatter.format(Formatter.java:2501)
+	at java.util.Formatter.format(Formatter.java:2455)
+	at java.lang.String.format(String.java:2940)
+	at CallAPIController.GetResponseString(CallAPIController.java:236)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:72)
+	at App.main(App.java:14)
+Nov 07, 2023 10:59:30 AM LogControl WriteLog
+INFO: 
+2023-11-07 10:59:30: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+Nov 07, 2023 10:59:30 AM LogControl WriteLog
+INFO: 
+2023-11-07 10:59:30: Request: {    "nopRutTienNHNNReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "c8ea503a-4489-46ef-b268-6889ebde1519",                "transactionId": "b6370606-6582-47ea-b90a-01688168dccc",                "messageTimestamp": "2023-11-07 10:59:30"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq":         {            "functionCode": "FLEXCASH-NOPRUTTIENNHNN-SOAP-T24",            "flexId": "ID.FLEX1141",            "flexInput": "USER1",            "flexAuth": "USER2",            "debitAccount": {                "acctNo": "VND12501000100011",                "currency": "VND",                "amount": "50000000",                "valueDate": "20231007"            },            "creditAccount": {                "acctNo": "500000000224"            },            "orderingCust": "CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "paymentDetails": "Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "profitCentreDept": "9001",            "company": "VN0010001"        }    }}
+Nov 07, 2023 11:03:55 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:03:55: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+Nov 07, 2023 11:03:55 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:03:55: Request: {    "nopRutTienNHNNReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "dff17a3a-3c8d-498d-ae2d-d7ec68382edb",                "transactionId": "f7a81f43-805d-4120-ab62-5ccb1308e8cf",                "messageTimestamp": "2023-11-07 11:03:55"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq":         {            "functionCode": "FLEXCASH-NOPRUTTIENNHNN-SOAP-T24",            "flexId": "ID.FLEX1141",            "flexInput": "USER1",            "flexAuth": "USER2",            "debitAccount": {                "acctNo": "VND12501000100011",                "currency": "VND",                "amount": "50000000",                "valueDate": "20231007"            },            "creditAccount": {                "acctNo": "500000000224"            },            "orderingCust": "CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "paymentDetails": "Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "profitCentreDept": "9001",            "company": "VN0010001"        }    }}
+Nov 07, 2023 11:04:54 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:04:54: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+Nov 07, 2023 11:04:54 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:04:54: Request: {    "nopRutTienNHNNReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "b8dd2ab1-95c7-4f71-bfd1-286ff4d6d472",                "transactionId": "9933b878-c3d4-42a8-b888-1da6500f0a0e",                "messageTimestamp": "2023-11-07 11:04:54"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq":         {            "functionCode": "FLEXCASH-NOPRUTTIENNHNN-SOAP-T24",            "flexId": "ID.FLEX1141",            "flexInput": "USER1",            "flexAuth": "USER2",            "debitAccount": {                "acctNo": "VND12501000100011",                "currency": "VND",                "amount": "50000000",                "valueDate": "20231007"            },            "creditAccount": {                "acctNo": "500000000224"            },            "orderingCust": "CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "paymentDetails": "Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "profitCentreDept": "9001",            "company": "VN0010001"        }    }}
+Nov 07, 2023 11:06:56 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:06:55: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+Nov 07, 2023 11:06:56 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:06:55: Request: {    "nopRutTienNHNNReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "95acf312-a84f-4ec9-bb66-b30ba0cc61db",                "transactionId": "10ba0623-d7c7-48d4-b56d-2d1434097499",                "messageTimestamp": "2023-11-07 11:06:55"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq":         {            "functionCode": "FLEXCASH-NOPRUTTIENNHNN-SOAP-T24",            "flexId": "ID.FLEX1141",            "flexInput": "USER1",            "flexAuth": "USER2",            "debitAccount": {                "acctNo": "VND12501000100011",                "currency": "VND",                "amount": "50000000",                "valueDate": "20231007"            },            "creditAccount": {                "acctNo": "500000000224"            },            "orderingCust": "CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "paymentDetails": "Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "profitCentreDept": "9001",            "company": "VN0010001"        }    }}
+
+2023-11-07 11:06:55  java.io.FileNotFoundException: nopRutTienNHNNReqRes.txt (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at ConfigReader.GetResponseConfContent(ConfigReader.java:86)
+	at CallAPIController.GetResponseResultByConfig(CallAPIController.java:251)
+	at CallAPIController.GetResponseString(CallAPIController.java:238)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:72)
+	at App.main(App.java:14)
+Nov 07, 2023 11:08:59 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:08:59: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+Nov 07, 2023 11:08:59 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:08:59: Request: {    "nopRutTienNHNNReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "c55a63eb-bef7-41ef-9c58-11d4b9aab2e0",                "transactionId": "3466d889-9765-4933-8b33-c72aceb3bb04",                "messageTimestamp": "2023-11-07 11:08:59"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq":         {            "functionCode": "FLEXCASH-NOPRUTTIENNHNN-SOAP-T24",            "flexId": "ID.FLEX1141",            "flexInput": "USER1",            "flexAuth": "USER2",            "debitAccount": {                "acctNo": "VND12501000100011",                "currency": "VND",                "amount": "50000000",                "valueDate": "20231007"            },            "creditAccount": {                "acctNo": "500000000224"            },            "orderingCust": "CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "paymentDetails": "Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "profitCentreDept": "9001",            "company": "VN0010001"        }    }}
+
+2023-11-07 11:08:59  java.io.FileNotFoundException: nopRutTienNHNNRes.txt (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at ConfigReader.GetResponseConfContent(ConfigReader.java:86)
+	at CallAPIController.GetResponseResultByConfig(CallAPIController.java:251)
+	at CallAPIController.GetResponseString(CallAPIController.java:238)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:72)
+	at App.main(App.java:14)
+Nov 07, 2023 11:10:51 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:10:51: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+Nov 07, 2023 11:10:51 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:10:51: Request: {    "nopRutTienNHNNReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "bdaff3c1-3ff2-479a-a453-f5cba51f72d6",                "transactionId": "683ec5e9-7975-49f6-b26c-a3768f91dc5a",                "messageTimestamp": "2023-11-07 11:10:51"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq":         {            "functionCode": "FLEXCASH-NOPRUTTIENNHNN-SOAP-T24",            "flexId": "ID.FLEX1141",            "flexInput": "USER1",            "flexAuth": "USER2",            "debitAccount": {                "acctNo": "VND12501000100011",                "currency": "VND",                "amount": "50000000",                "valueDate": "20231007"            },            "creditAccount": {                "acctNo": "500000000224"            },            "orderingCust": "CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "paymentDetails": "Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "profitCentreDept": "9001",            "company": "VN0010001"        }    }}
+
+2023-11-07 11:10:51  java.lang.NullPointerException
+	at CallAPIController.GetResponseResultByConfig(CallAPIController.java:254)
+	at CallAPIController.GetResponseString(CallAPIController.java:238)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:72)
+	at App.main(App.java:14)
+Nov 07, 2023 11:12:10 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:12:10: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+Nov 07, 2023 11:12:11 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:12:10: Request: {    "nopRutTienNHNNReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "819fc8f4-5e9c-4d22-9fc0-b3a3584ff087",                "transactionId": "87527001-4060-4178-8226-2ebc6eac5f9f",                "messageTimestamp": "2023-11-07 11:12:10"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq":         {            "functionCode": "FLEXCASH-NOPRUTTIENNHNN-SOAP-T24",            "flexId": "ID.FLEX1141",            "flexInput": "USER1",            "flexAuth": "USER2",            "debitAccount": {                "acctNo": "VND12501000100011",                "currency": "VND",                "amount": "50000000",                "valueDate": "20231007"            },            "creditAccount": {                "acctNo": "500000000224"            },            "orderingCust": "CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "paymentDetails": "Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "profitCentreDept": "9001",            "company": "VN0010001"        }    }}
+Nov 07, 2023 11:16:19 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:16:19: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+Nov 07, 2023 11:16:19 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:16:19: Request: {    "nopRutTienNHNNReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "62e4c3e3-5518-409e-821c-f38bfb9f27d5",                "transactionId": "f1c82269-8267-4379-8d2b-a5b781751c4e",                "messageTimestamp": "2023-11-07 11:16:19"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq":         {            "functionCode": "FLEXCASH-NOPRUTTIENNHNN-SOAP-T24",            "flexId": "ID.FLEX1141",            "flexInput": "USER1",            "flexAuth": "USER2",            "debitAccount": {                "acctNo": "VND12501000100011",                "currency": "VND",                "amount": "50000000",                "valueDate": "20231007"            },            "creditAccount": {                "acctNo": "500000000224"            },            "orderingCust": "CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "paymentDetails": "Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "profitCentreDept": "9001",            "company": "VN0010001"        }    }}
+Nov 07, 2023 11:24:01 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:16:19: Response: {"nopRutTienNHNNRes":{"header":{"common":{"serviceVersion":"1","messageId":"62e4c3e3-5518-409e-821c-f38bfb9f27d5","transactionId":"f1c82269-8267-4379-8d2b-a5b781751c4e","messageTimestamp":"2023-11-07 11:16:19"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"1","globalErrorCode":"004","globalErrorDescription":"Error in Backend"},"bodyRes":{"functionCode":"FLEXCASH-NOPRUTTIENNHNN-SOAP-T24","twsFlexStatus":{"transactionId":"FT23284G24YB","successIndicator":"T24Error","messages":["DEBIT.VALUE.DATE:1:1=KHONG DUOC PHEP NHAP BACKDATE"]}}}}
+Nov 07, 2023 11:24:02 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:16:19: ResBody: {"nopRutTienNHNNRes":{"header":{"common":{"serviceVersion":"1","messageId":"62e4c3e3-5518-409e-821c-f38bfb9f27d5","transactionId":"f1c82269-8267-4379-8d2b-a5b781751c4e","messageTimestamp":"2023-11-07 11:16:19"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"1","globalErrorCode":"004","globalErrorDescription":"Error in Backend"},"bodyRes":{"functionCode":"FLEXCASH-NOPRUTTIENNHNN-SOAP-T24","twsFlexStatus":{"transactionId":"FT23284G24YB","successIndicator":"T24Error","messages":["DEBIT.VALUE.DATE:1:1=KHONG DUOC PHEP NHAP BACKDATE"]}}}}
+Nov 07, 2023 11:30:51 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:30:51: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+Nov 07, 2023 11:30:52 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:30:51: Request: {    "nopRutTienNHNNReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "e5352f76-2ce3-4456-b688-25cf82b61a89",                "transactionId": "4c196cca-4c4b-4a52-ac73-543c2ed799cd",                "messageTimestamp": "2023-11-07 11:30:51"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq":         {            "functionCode": "FLEXCASH-NOPRUTTIENNHNN-SOAP-T24",            "flexId": "ID.FLEX1141",            "flexInput": "USER1",            "flexAuth": "USER2",            "debitAccount": {                "acctNo": "VND12501000100011",                "currency": "VND",                "amount": "50000000",                "valueDate": "20231007"            },            "creditAccount": {                "acctNo": "500000000224"            },            "orderingCust": "CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "paymentDetails": "Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN",            "profitCentreDept": "9001",            "company": "VN0010001"        }    }}
+Nov 07, 2023 11:30:56 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:30:51: Response: {"nopRutTienNHNNRes":{"header":{"common":{"serviceVersion":"1","messageId":"e5352f76-2ce3-4456-b688-25cf82b61a89","transactionId":"4c196cca-4c4b-4a52-ac73-543c2ed799cd","messageTimestamp":"2023-11-07 11:30:51"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"1","globalErrorCode":"004","globalErrorDescription":"Error in Backend"},"bodyRes":{"functionCode":"FLEXCASH-NOPRUTTIENNHNN-SOAP-T24","twsFlexStatus":{"transactionId":"FT23284MYNTL","successIndicator":"T24Error","messages":["DEBIT.VALUE.DATE:1:1=KHONG DUOC PHEP NHAP BACKDATE"]}}}}
+Nov 07, 2023 11:30:56 AM LogControl WriteLog
+INFO: 
+2023-11-07 11:30:51: ResBody: {"nopRutTienNHNNRes":{"header":{"common":{"serviceVersion":"1","messageId":"e5352f76-2ce3-4456-b688-25cf82b61a89","transactionId":"4c196cca-4c4b-4a52-ac73-543c2ed799cd","messageTimestamp":"2023-11-07 11:30:51"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"1","globalErrorCode":"004","globalErrorDescription":"Error in Backend"},"bodyRes":{"functionCode":"FLEXCASH-NOPRUTTIENNHNN-SOAP-T24","twsFlexStatus":{"transactionId":"FT23284MYNTL","successIndicator":"T24Error","messages":["DEBIT.VALUE.DATE:1:1=KHONG DUOC PHEP NHAP BACKDATE"]}}}}

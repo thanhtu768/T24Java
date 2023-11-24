@@ -1,0 +1,916 @@
+Nov 23, 2023 2:25:03 PM LogControl WriteLog
+INFO: 
+2023-11-23 14:25:03: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-23 14:25:03  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:129)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:58)
+	at App.main(App.java:14)
+
+2023-11-23 14:25:03  java.lang.NullPointerException
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:337)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:14)
+Nov 23, 2023 2:25:19 PM LogControl WriteLog
+INFO: 
+2023-11-23 14:25:19: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-23 14:25:19  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:129)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:58)
+	at App.main(App.java:14)
+Nov 23, 2023 2:26:37 PM LogControl WriteLog
+INFO: 
+2023-11-23 14:26:37: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-23 14:26:37  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:129)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:58)
+	at App.main(App.java:14)
+Nov 23, 2023 3:07:06 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:07:06: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-23 15:07:06  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:14)
+
+2023-11-23 15:07:06  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:23)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.GetClientInfo(CallAPIController.java:326)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:14)
+
+2023-11-23 15:07:06  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:23)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.GetClientInfo(CallAPIController.java:326)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:14)
+
+2023-11-23 15:07:06  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:23)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.GetClientInfo(CallAPIController.java:328)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:14)
+
+2023-11-23 15:07:06  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:23)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.GetClientInfo(CallAPIController.java:328)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:14)
+
+2023-11-23 15:07:06  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:23)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.GetClientInfo(CallAPIController.java:329)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:14)
+
+2023-11-23 15:07:06  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:23)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.GetClientInfo(CallAPIController.java:329)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:14)
+
+2023-11-23 15:07:06  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:23)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.GetClientInfo(CallAPIController.java:330)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:14)
+
+2023-11-23 15:07:06  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:23)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.GetClientInfo(CallAPIController.java:330)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:14)
+
+2023-11-23 15:07:06  java.lang.NullPointerException
+	at java.util.regex.Matcher.appendReplacement(Matcher.java:804)
+	at java.util.regex.Matcher.replaceAll(Matcher.java:955)
+	at java.lang.String.replaceAll(String.java:2223)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:357)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:14)
+Nov 23, 2023 3:08:24 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:08:24: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-23 15:08:24  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:14)
+
+2023-11-23 15:08:24  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:23)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.GetClientInfo(CallAPIController.java:326)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:14)
+
+2023-11-23 15:08:24  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:23)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.GetClientInfo(CallAPIController.java:326)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:14)
+Nov 23, 2023 3:12:54 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:12:54: nopRutTienNHNN^ID.FLEX1141*USER1*USER2*VND12501000100011*VND*50000000*20231007*500000000224*CN Ha noi Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN Thuc hien rut tien mat tu NHNN*9001*VN0010001
+
+2023-11-23 15:12:54  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:14)
+Nov 23, 2023 3:13:09 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:12:54: Request: {    "nopRutTienNHNNReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "95f53cfa-7a62-4772-8135-fad21ed8c1f7",                "transactionId": "830e5f8b-fbc2-48bc-883a-02e6ee26881d",                "messageTimestamp": "2023-11-23 15:12:54"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "IZI",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq":         {            "functionCode": "FLEXCASH-NOPRUTTIENNHNN-SOAP-T24",            "flexId": "[0]",            "flexInput": "[1]",            "flexAuth": "[2]",            "debitAccount": {                "acctNo": "[3]",                "currency": "[4]",                "amount": "[5]",                "valueDate": "[6]"            },            "creditAccount": {                "acctNo": "[7]"            },            "orderingCust": "[8]",            "paymentDetails": "[9]",            "profitCentreDept": "[10]",            "company": "[11]"        }    }}
+Nov 23, 2023 3:13:10 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:12:54: Response: {"nopRutTienNHNNRes":{"header":{"common":{"serviceVersion":"1","messageId":"95f53cfa-7a62-4772-8135-fad21ed8c1f7","transactionId":"830e5f8b-fbc2-48bc-883a-02e6ee26881d","messageTimestamp":"2023-11-23 15:12:54"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"1","globalErrorCode":"004","globalErrorDescription":"Error in Backend"},"bodyRes":{"functionCode":"FLEXCASH-NOPRUTTIENNHNN-SOAP-T24","twsFlexStatus":{"transactionId":"","successIndicator":"T24Error","messages":["INVALID COMPANY SPECIFIED DURING SIGN ON PROCESS"]}}}}
+Nov 23, 2023 3:13:10 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:12:54: ResBody: {"nopRutTienNHNNRes":{"header":{"common":{"serviceVersion":"1","messageId":"95f53cfa-7a62-4772-8135-fad21ed8c1f7","transactionId":"830e5f8b-fbc2-48bc-883a-02e6ee26881d","messageTimestamp":"2023-11-23 15:12:54"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"1","globalErrorCode":"004","globalErrorDescription":"Error in Backend"},"bodyRes":{"functionCode":"FLEXCASH-NOPRUTTIENNHNN-SOAP-T24","twsFlexStatus":{"transactionId":"","successIndicator":"T24Error","messages":["INVALID COMPANY SPECIFIED DURING SIGN ON PROCESS"]}}}}
+Nov 23, 2023 3:14:37 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:14:37: trangThaiAnChi^SM000030
+
+2023-11-23 15:14:37  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:14:37  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+Nov 23, 2023 3:14:41 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:14:37: Request: {    "trangThaiAnChiReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "8d7924b3-81cf-4c25-af85-a50cdac87143",                "transactionId": "39993947-3b3d-47f6-a855-8ccac8f445d2",                "messageTimestamp": "2023-11-23 15:14:37"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "IZI",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-REST-TRANGTHAIANCHI-BASICAUTH",            "serial": "[0]"        }    }}
+
+2023-11-23 15:14:37  java.lang.NullPointerException
+	at CallAPIController.GetResponseString(CallAPIController.java:230)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:62)
+	at App.main(App.java:15)
+Nov 23, 2023 3:15:05 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:15:05: trangThaiAnChi^SM000030
+
+2023-11-23 15:15:05  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:15:05  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+Nov 23, 2023 3:17:06 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:15:05: Request: {    "trangThaiAnChiReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "827b53ca-f962-4f3b-93b7-ca951f5cbe5e",                "transactionId": "11f3c13d-64a7-4f23-90b0-bd86a83ad438",                "messageTimestamp": "2023-11-23 15:15:05"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "IZI",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-REST-TRANGTHAIANCHI-BASICAUTH",            "serial": "[0]"        }    }}
+Nov 23, 2023 3:19:12 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:19:11: trangThaiAnChi^SM000030
+
+2023-11-23 15:19:11  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:19:11  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+Nov 23, 2023 3:20:46 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:19:11: Request: {    "trangThaiAnChiReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "ea48df20-5b60-47d4-9467-11d952621181",                "transactionId": "348562df-a1bd-4a98-ac76-fc56c8b89e12",                "messageTimestamp": "2023-11-23 15:19:05"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "IZI",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-REST-TRANGTHAIANCHI-BASICAUTH",            "serial": "[0]"        }    }}
+
+2023-11-23 15:19:11  java.lang.NullPointerException
+	at CallAPIController.GetResponseString(CallAPIController.java:230)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:62)
+	at App.main(App.java:15)
+Nov 23, 2023 3:20:59 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:20:59: trangThaiAnChi^SM000030
+
+2023-11-23 15:20:59  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:20:59  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+Nov 23, 2023 3:23:39 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:20:59: Request: {    "trangThaiAnChiReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "f4b32998-937b-428c-ba3a-0011f9dd9b80",                "transactionId": "e8efcf35-5e96-4d16-8c80-a116cd300063",                "messageTimestamp": "2023-11-23 15:20:49"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "IZI",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-REST-TRANGTHAIANCHI-BASICAUTH",            "serial": "[0]"        }    }}
+
+2023-11-23 15:20:59  java.lang.NullPointerException
+	at CallAPIController.GetResponseString(CallAPIController.java:230)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:62)
+	at App.main(App.java:15)
+Nov 23, 2023 3:23:45 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:23:45: trangThaiAnChi^SM000030
+
+2023-11-23 15:23:45  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:23:45  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+Nov 23, 2023 3:23:49 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:23:45: Request: {    "trangThaiAnChiReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "a00cfd9c-4249-4001-b62c-b912d16441bb",                "transactionId": "1bfbe6ee-8a06-4d56-a4f0-b2bb46fc7a51",                "messageTimestamp": "2023-11-23 15:23:44"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "IZI",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-REST-TRANGTHAIANCHI-BASICAUTH",            "serial": "SM000030"        }    }}
+Nov 23, 2023 3:23:49 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:23:45: Response: {"trangThaiAnChiRes":{"header":{"common":{"serviceVersion":"1","messageId":"a00cfd9c-4249-4001-b62c-b912d16441bb","transactionId":"1bfbe6ee-8a06-4d56-a4f0-b2bb46fc7a51","messageTimestamp":"2023-11-23 15:23:44"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"transId":"a39505e5-0ddc-4afb-b599-cedf03909952","serial":"SM000030","com":"VN1922979-NCB Hoang ngan","status":null}}}
+Nov 23, 2023 3:23:49 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:23:45: ResBody: {"trangThaiAnChiRes":{"header":{"common":{"serviceVersion":"1","messageId":"a00cfd9c-4249-4001-b62c-b912d16441bb","transactionId":"1bfbe6ee-8a06-4d56-a4f0-b2bb46fc7a51","messageTimestamp":"2023-11-23 15:23:44"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"transId":"a39505e5-0ddc-4afb-b599-cedf03909952","serial":"SM000030","com":"VN1922979-NCB Hoang ngan","status":null}}}
+Nov 23, 2023 3:24:51 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:24:51: getFlexTransInfoById^tult-FLEX-TEST9443C14
+
+2023-11-23 15:24:51  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:24:51  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.GetClientInfo(CallAPIController.java:329)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:15)
+
+2023-11-23 15:24:51  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.GetClientInfo(CallAPIController.java:329)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:15)
+
+2023-11-23 15:24:51  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.GetClientInfo(CallAPIController.java:330)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:15)
+
+2023-11-23 15:24:51  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.GetClientInfo(CallAPIController.java:330)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:15)
+
+2023-11-23 15:24:51  java.lang.NullPointerException
+	at java.util.regex.Matcher.appendReplacement(Matcher.java:804)
+	at java.util.regex.Matcher.replaceAll(Matcher.java:955)
+	at java.lang.String.replaceAll(String.java:2223)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:359)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:15)
+Nov 23, 2023 3:25:18 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:25:18: getFlexTransInfoById^tult-FLEX-TEST9443C14
+
+2023-11-23 15:25:18  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:25:18  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.GetClientInfo(CallAPIController.java:329)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:15)
+
+2023-11-23 15:25:18  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.GetClientInfo(CallAPIController.java:329)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:15)
+
+2023-11-23 15:25:18  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.GetClientInfo(CallAPIController.java:330)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:15)
+
+2023-11-23 15:25:18  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.GetClientInfo(CallAPIController.java:330)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:15)
+
+2023-11-23 15:25:18  java.lang.NullPointerException
+	at java.util.regex.Matcher.appendReplacement(Matcher.java:804)
+	at java.util.regex.Matcher.replaceAll(Matcher.java:955)
+	at java.lang.String.replaceAll(String.java:2223)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:359)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:15)
+Nov 23, 2023 3:25:49 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:25:49: getFlexTransInfoById^tult-FLEX-TEST9443C14
+
+2023-11-23 15:25:49  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:25:49  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.GetClientInfo(CallAPIController.java:329)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:15)
+
+2023-11-23 15:25:49  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.GetClientInfo(CallAPIController.java:329)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:15)
+
+2023-11-23 15:25:49  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.GetClientInfo(CallAPIController.java:330)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:15)
+
+2023-11-23 15:25:49  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.GetClientInfo(CallAPIController.java:330)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:15)
+
+2023-11-23 15:25:49  java.lang.NullPointerException
+	at java.util.regex.Matcher.appendReplacement(Matcher.java:804)
+	at java.util.regex.Matcher.replaceAll(Matcher.java:955)
+	at java.lang.String.replaceAll(String.java:2223)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:359)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:15)
+Nov 23, 2023 3:28:01 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:28:01: getFlexTransInfoById^tult-FLEX-TEST9443C14
+
+2023-11-23 15:28:01  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:28:01  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.GetClientInfo(CallAPIController.java:329)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:15)
+
+2023-11-23 15:28:01  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.GetClientInfo(CallAPIController.java:329)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:306)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:351)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:15)
+
+2023-11-23 15:28:01  java.lang.NullPointerException
+	at java.util.regex.Matcher.appendReplacement(Matcher.java:804)
+	at java.util.regex.Matcher.replaceAll(Matcher.java:955)
+	at java.lang.String.replaceAll(String.java:2223)
+	at CallAPIController.GetESBRequestHeader(CallAPIController.java:359)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:61)
+	at App.main(App.java:15)
+Nov 23, 2023 3:31:43 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:31:43: getFlexTransInfoById^tult-FLEX-TEST9443C14
+
+2023-11-23 15:31:43  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+Nov 23, 2023 3:31:46 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:31:43: Request: {    "getFlexTransInfoByIdReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "0345d767-6bc6-4e69-8747-c2c4231e201e",                "transactionId": "637ba502-208c-4c3d-a696-9002a9f7d159",                "messageTimestamp": "2023-11-23 15:31:39"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "IZI",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24",            "id": "tult-FLEX-TEST9443C14"        }    }}
+Nov 23, 2023 3:31:47 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:31:43: Response: {"getFlexTransInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"0345d767-6bc6-4e69-8747-c2c4231e201e","transactionId":"637ba502-208c-4c3d-a696-9002a9f7d159","messageTimestamp":"2023-11-23 15:31:39"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":[]},"flexTransInfoDetailType":{"id":"tult-FLEX-TEST9443C14","application":"TELLER,FC.NOPTM.CP","t24Id":"TT23252M6H6J","t24TransDate":"20230909","flexInput":"FLEXID","flexAuth":"FLEXID234556"}}}}
+Nov 23, 2023 3:31:47 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:31:43: ResBody: {"getFlexTransInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"0345d767-6bc6-4e69-8747-c2c4231e201e","transactionId":"637ba502-208c-4c3d-a696-9002a9f7d159","messageTimestamp":"2023-11-23 15:31:39"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":[]},"flexTransInfoDetailType":{"id":"tult-FLEX-TEST9443C14","application":"TELLER,FC.NOPTM.CP","t24Id":"TT23252M6H6J","t24TransDate":"20230909","flexInput":"FLEXID","flexAuth":"FLEXID234556"}}}}
+Nov 23, 2023 3:35:17 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:35:17: getFlexTransInfoById^tult-FLEX-TEST9443C14
+
+2023-11-23 15:35:17  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+Nov 23, 2023 3:35:19 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:35:17: Request: {    "getFlexTransInfoByIdReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "92666620-2160-4e04-810b-80c6c99e16c6",                "transactionId": "678f8578-9311-4c18-95e2-5fc0966e33ca",                "messageTimestamp": "2023-11-23 15:35:15"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "IZI",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24",            "id": "tult-FLEX-TEST9443C14"        }    }}
+Nov 23, 2023 3:35:20 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:35:17: Response: {"getFlexTransInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"92666620-2160-4e04-810b-80c6c99e16c6","transactionId":"678f8578-9311-4c18-95e2-5fc0966e33ca","messageTimestamp":"2023-11-23 15:35:15"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":[]},"flexTransInfoDetailType":{"id":"tult-FLEX-TEST9443C14","application":"TELLER,FC.NOPTM.CP","t24Id":"TT23252M6H6J","t24TransDate":"20230909","flexInput":"FLEXID","flexAuth":"FLEXID234556"}}}}
+Nov 23, 2023 3:35:20 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:35:17: ResBody: {"getFlexTransInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"92666620-2160-4e04-810b-80c6c99e16c6","transactionId":"678f8578-9311-4c18-95e2-5fc0966e33ca","messageTimestamp":"2023-11-23 15:35:15"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":[]},"flexTransInfoDetailType":{"id":"tult-FLEX-TEST9443C14","application":"TELLER,FC.NOPTM.CP","t24Id":"TT23252M6H6J","t24TransDate":"20230909","flexInput":"FLEXID","flexAuth":"FLEXID234556"}}}}
+Nov 23, 2023 3:35:49 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:35:49: trangThaiAnChi^SM000030
+
+2023-11-23 15:35:49  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:21)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:125)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:35:49  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:21)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:125)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:35:49  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:21)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:127)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:35:49  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:21)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:127)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:35:49  java.net.MalformedURLException
+	at java.net.URL.<init>(URL.java:644)
+	at java.net.URL.<init>(URL.java:507)
+	at java.net.URL.<init>(URL.java:456)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:128)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+Caused by: java.lang.NullPointerException
+	at java.net.URL.<init>(URL.java:549)
+	... 5 more
+Nov 23, 2023 3:36:13 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:36:12: trangThaiAnChi^SM000030
+
+2023-11-23 15:36:12  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:21)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:125)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:36:12  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:21)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:125)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:36:12  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:21)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:127)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:36:12  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:21)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:127)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:36:12  java.net.MalformedURLException
+	at java.net.URL.<init>(URL.java:644)
+	at java.net.URL.<init>(URL.java:507)
+	at java.net.URL.<init>(URL.java:456)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:128)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+Caused by: java.lang.NullPointerException
+	at java.net.URL.<init>(URL.java:549)
+	... 5 more
+Nov 23, 2023 3:36:24 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:36:24: trangThaiAnChi^SM000030
+
+2023-11-23 15:36:24  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:21)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:125)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:36:24  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:21)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:125)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:36:24  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:21)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:127)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:36:24  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:21)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:127)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:36:24  java.net.MalformedURLException
+	at java.net.URL.<init>(URL.java:644)
+	at java.net.URL.<init>(URL.java:507)
+	at java.net.URL.<init>(URL.java:456)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:128)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+Caused by: java.lang.NullPointerException
+	at java.net.URL.<init>(URL.java:549)
+	... 5 more
+Nov 23, 2023 3:36:46 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:36:46: trangThaiAnChi^SM000030
+
+2023-11-23 15:36:46  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:21)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:125)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:36:46  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:21)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:125)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:36:46  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:21)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:127)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:36:46  java.lang.NullPointerException
+	at CustomJsonHandle.GetJsonElementByMultiKey(CustomJsonHandle.java:21)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:127)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+Nov 23, 2023 3:38:08 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:38:08: trangThaiAnChi^SM000030
+
+2023-11-23 15:38:08  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:38:08  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+Nov 23, 2023 3:38:11 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:38:08: Request: {    "trangThaiAnChiReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "39fada41-1c00-4274-b5b9-d4cd0775d9ea",                "transactionId": "97d2b726-b26a-4741-bf20-126420dee56b",                "messageTimestamp": "2023-11-23 15:38:06"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "IZI",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-REST-TRANGTHAIANCHI-BASICAUTH",            "serial": "SM000030"        }    }}
+Nov 23, 2023 3:38:11 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:38:08: Response: {"trangThaiAnChiRes":{"header":{"common":{"serviceVersion":"1","messageId":"39fada41-1c00-4274-b5b9-d4cd0775d9ea","transactionId":"97d2b726-b26a-4741-bf20-126420dee56b","messageTimestamp":"2023-11-23 15:38:06"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"transId":"f9cc7c1d-6f97-431e-b064-ed2a65bcacf1","serial":"SM000030","com":"VN1922979-NCB Hoang ngan","status":null}}}
+Nov 23, 2023 3:38:11 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:38:08: ResBody: {"trangThaiAnChiRes":{"header":{"common":{"serviceVersion":"1","messageId":"39fada41-1c00-4274-b5b9-d4cd0775d9ea","transactionId":"97d2b726-b26a-4741-bf20-126420dee56b","messageTimestamp":"2023-11-23 15:38:06"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"transId":"f9cc7c1d-6f97-431e-b064-ed2a65bcacf1","serial":"SM000030","com":"VN1922979-NCB Hoang ngan","status":null}}}
+Nov 23, 2023 3:40:12 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:40:12: trangThaiAnChi^SM000030
+
+2023-11-23 15:40:12  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:40:12  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+Nov 23, 2023 3:40:16 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:40:12: Request: {    "trangThaiAnChiReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "1373800d-392e-453f-a4bd-9c16ac423f39",                "transactionId": "6f09bfd3-0268-4a5c-b2d1-e359c7542f6e",                "messageTimestamp": "2023-11-23 15:40:10"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "IZI",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-REST-TRANGTHAIANCHI-BASICAUTH",            "serial": "SM000030"        }    }}
+Nov 23, 2023 3:41:58 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:40:12: Response: {"trangThaiAnChiRes":{"header":{"common":{"serviceVersion":"1","messageId":"1373800d-392e-453f-a4bd-9c16ac423f39","transactionId":"6f09bfd3-0268-4a5c-b2d1-e359c7542f6e","messageTimestamp":"2023-11-23 15:40:10"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"transId":"d4029c44-3901-4747-a093-3fce8a493cfd","serial":"SM000030","com":"VN1922979-NCB Hoang ngan","status":null}}}
+Nov 23, 2023 3:41:58 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:40:12: ResBody: {"trangThaiAnChiRes":{"header":{"common":{"serviceVersion":"1","messageId":"1373800d-392e-453f-a4bd-9c16ac423f39","transactionId":"6f09bfd3-0268-4a5c-b2d1-e359c7542f6e","messageTimestamp":"2023-11-23 15:40:10"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"transId":"d4029c44-3901-4747-a093-3fce8a493cfd","serial":"SM000030","com":"VN1922979-NCB Hoang ngan","status":null}}}
+Nov 23, 2023 3:42:09 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:42:09: trangThaiAnChi^SM000030
+
+2023-11-23 15:42:09  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:42:09  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+Nov 23, 2023 3:42:11 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:42:09: Request: {    "trangThaiAnChiReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "65ccf64a-8085-40cc-9fcc-7bb981109143",                "transactionId": "4591ba97-63e2-457f-9209-b6b1a04fac9f",                "messageTimestamp": "2023-11-23 15:42:07"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "IZI",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-REST-TRANGTHAIANCHI-BASICAUTH",            "serial": "SM000030"        }    }}
+Nov 23, 2023 3:42:48 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:42:09: Response: {"trangThaiAnChiRes":{"header":{"common":{"serviceVersion":"1","messageId":"65ccf64a-8085-40cc-9fcc-7bb981109143","transactionId":"4591ba97-63e2-457f-9209-b6b1a04fac9f","messageTimestamp":"2023-11-23 15:42:07"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"transId":"184f27f4-8d6f-4b60-82a0-81b5e09dd343","serial":"SM000030","com":"VN1922979-NCB Hoang ngan","status":null}}}
+Nov 23, 2023 3:42:48 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:42:09: ResBody: {"trangThaiAnChiRes":{"header":{"common":{"serviceVersion":"1","messageId":"65ccf64a-8085-40cc-9fcc-7bb981109143","transactionId":"4591ba97-63e2-457f-9209-b6b1a04fac9f","messageTimestamp":"2023-11-23 15:42:07"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"transId":"184f27f4-8d6f-4b60-82a0-81b5e09dd343","serial":"SM000030","com":"VN1922979-NCB Hoang ngan","status":null}}}
+Nov 23, 2023 3:45:03 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:45:03: trangThaiAnChi^SM000030
+
+2023-11-23 15:45:03  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+
+2023-11-23 15:45:03  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:81)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+Nov 23, 2023 3:45:03 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:45:03: Request: {    "trangThaiAnChiReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "e6b0cb4e-bc32-4154-a466-b729341a639e",                "transactionId": "d64abac8-dc85-4519-964f-c4a6e75e16f4",                "messageTimestamp": "2023-11-23 15:44:59"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "IZI",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-REST-TRANGTHAIANCHI-BASICAUTH",            "serial": "SM000030"        }    }}
+Nov 23, 2023 3:45:07 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:45:03: Response: {"trangThaiAnChiRes":{"header":{"common":{"serviceVersion":"1","messageId":"e6b0cb4e-bc32-4154-a466-b729341a639e","transactionId":"d64abac8-dc85-4519-964f-c4a6e75e16f4","messageTimestamp":"2023-11-23 15:44:59"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"transId":"21e25d78-49a6-44c3-a403-9df8ba7684fa","serial":"SM000030","com":"VN1922979-NCB Hoang ngan","status":null}}}
+Nov 23, 2023 3:45:42 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:45:42: getFlexTransInfoById^tult-FLEX-TEST9443C14
+
+2023-11-23 15:45:42  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:130)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:59)
+	at App.main(App.java:15)
+Nov 23, 2023 3:45:42 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:45:42: Request: {    "getFlexTransInfoByIdReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "15e99d3b-83d0-4b3d-98f9-d0732bc8eb14",                "transactionId": "b7b21fec-a6ff-4015-9b09-e2a639104d0b",                "messageTimestamp": "2023-11-23 15:45:42"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "IZI",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24",            "id": "tult-FLEX-TEST9443C14"        }    }}
+Nov 23, 2023 3:45:43 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:45:42: Response: {"getFlexTransInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"15e99d3b-83d0-4b3d-98f9-d0732bc8eb14","transactionId":"b7b21fec-a6ff-4015-9b09-e2a639104d0b","messageTimestamp":"2023-11-23 15:45:42"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":[]},"flexTransInfoDetailType":{"id":"tult-FLEX-TEST9443C14","application":"TELLER,FC.NOPTM.CP","t24Id":"TT23252M6H6J","t24TransDate":"20230909","flexInput":"FLEXID","flexAuth":"FLEXID234556"}}}}
+Nov 23, 2023 3:50:47 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:50:47: getFlexTransInfoById^tult-FLEX-TEST9443C14
+Nov 23, 2023 3:52:32 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:52:32: getFlexTransInfoById^tult-FLEX-TEST9443C14
+
+2023-11-23 15:52:32  java.lang.UnsupportedOperationException: JsonObject
+	at com.google.gson.JsonElement.getAsString(JsonElement.java:187)
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:74)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:123)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:52)
+	at App.main(App.java:15)
+Nov 23, 2023 3:52:37 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:52:32: Request: {    "getFlexTransInfoByIdReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "28a48752-dc93-48d2-b78d-65d523070463",                "transactionId": "ccd1ca3d-2388-4184-9df0-94339ede1674",                "messageTimestamp": "2023-11-23 15:52:31"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "IZI",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24",            "id": "tult-FLEX-TEST9443C14"        }    }}
+Nov 23, 2023 3:52:39 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:52:32: Response: {"getFlexTransInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"28a48752-dc93-48d2-b78d-65d523070463","transactionId":"ccd1ca3d-2388-4184-9df0-94339ede1674","messageTimestamp":"2023-11-23 15:52:31"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":[]},"flexTransInfoDetailType":{"id":"tult-FLEX-TEST9443C14","application":"TELLER,FC.NOPTM.CP","t24Id":"TT23252M6H6J","t24TransDate":"20230909","flexInput":"FLEXID","flexAuth":"FLEXID234556"}}}}
+Nov 23, 2023 3:52:39 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:52:32: Response Send To T24: 0*000*Successful*tult-FLEX-TEST9443C14*TELLER,FC.NOPTM.CP*TT23252M6H6J*20230909*FLEXID*FLEXID234556
+Nov 23, 2023 3:53:00 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:53:00: getFlexTransInfoById^tult-FLEX-TEST9443C14
+Nov 23, 2023 3:53:01 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:53:00: Request: {    "getFlexTransInfoByIdReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "cd652ba7-a31a-4f4a-bd81-db2e3d652804",                "transactionId": "0d0b1386-bc91-4d6d-a3d5-6fee2ef651ba",                "messageTimestamp": "2023-11-23 15:53:00"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "IZI",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24",            "id": "tult-FLEX-TEST9443C14"        }    }}
+Nov 23, 2023 3:53:01 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:53:00: Response: {"getFlexTransInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"cd652ba7-a31a-4f4a-bd81-db2e3d652804","transactionId":"0d0b1386-bc91-4d6d-a3d5-6fee2ef651ba","messageTimestamp":"2023-11-23 15:53:00"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETFLEXTRANSINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":[]},"flexTransInfoDetailType":{"id":"tult-FLEX-TEST9443C14","application":"TELLER,FC.NOPTM.CP","t24Id":"TT23252M6H6J","t24TransDate":"20230909","flexInput":"FLEXID","flexAuth":"FLEXID234556"}}}}
+Nov 23, 2023 3:53:01 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:53:00: Response Send To T24: 0*000*Successful*tult-FLEX-TEST9443C14*TELLER,FC.NOPTM.CP*TT23252M6H6J*20230909*FLEXID*FLEXID234556
+Nov 23, 2023 3:53:11 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:53:10: trangThaiAnChi^SM000030
+
+2023-11-23 15:53:10  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:79)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:123)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:52)
+	at App.main(App.java:15)
+Nov 23, 2023 3:53:11 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:53:10: Request: {    "trangThaiAnChiReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "8e74dac9-9417-4647-8b14-1bf8aa7f2b66",                "transactionId": "643a2335-3fef-4e01-b175-6c74816c575b",                "messageTimestamp": "2023-11-23 15:53:10"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "IZI",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-REST-TRANGTHAIANCHI-BASICAUTH",            "serial": "SM000030"        }    }}
+Nov 23, 2023 3:53:12 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:53:10: Response: {"trangThaiAnChiRes":{"header":{"common":{"serviceVersion":"1","messageId":"8e74dac9-9417-4647-8b14-1bf8aa7f2b66","transactionId":"643a2335-3fef-4e01-b175-6c74816c575b","messageTimestamp":"2023-11-23 15:53:10"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"transId":"5f687f9c-3d16-4654-a9a0-abce46cbc4af","serial":"SM000030","com":"VN1922979-NCB Hoang ngan","status":null}}}
+Nov 23, 2023 3:53:12 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:53:10: Response Send To T24: 0*000*Successful*SM000030*VN1922979-NCB Hoang ngan*
+Nov 23, 2023 3:53:42 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:53:42: trangThaiAnChi^SM000030
+
+2023-11-23 15:53:42  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:79)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:123)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:52)
+	at App.main(App.java:15)
+Nov 23, 2023 3:53:54 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:53:42: Request: {    "trangThaiAnChiReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "e3c9f76a-a9de-406d-8f36-53489dfebdfd",                "transactionId": "ea7c6275-995e-49de-983f-620a148bee1c",                "messageTimestamp": "2023-11-23 15:53:42"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "IZI",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-REST-TRANGTHAIANCHI-BASICAUTH",            "serial": "SM000030"        }    }}
+Nov 23, 2023 3:53:54 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:53:42: Response: {"trangThaiAnChiRes":{"header":{"common":{"serviceVersion":"1","messageId":"e3c9f76a-a9de-406d-8f36-53489dfebdfd","transactionId":"ea7c6275-995e-49de-983f-620a148bee1c","messageTimestamp":"2023-11-23 15:53:42"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"transId":"13feb322-3a8c-45ac-ab12-ea95f2131156","serial":"SM000030","com":"VN1922979-NCB Hoang ngan","status":null}}}
+Nov 23, 2023 3:53:54 PM LogControl WriteLog
+INFO: 
+2023-11-23 15:53:42: Response Send To T24: 0*000*Successful*SM000030*VN1922979-NCB Hoang ngan*
+Nov 23, 2023 4:03:07 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:03:07: trangThaiAnChi^SM000030
+
+2023-11-23 16:03:07  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:79)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:123)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:52)
+	at App.main(App.java:15)
+Nov 23, 2023 4:03:10 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:03:07: Request: {    "trangThaiAnChiReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "4d47f998-8af8-4824-8729-f966304c8ea5",                "transactionId": "b148cf0f-ca85-4ef1-949c-0b9aa11350ae",                "messageTimestamp": "2023-11-23 16:03:07"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "IZI",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-REST-TRANGTHAIANCHI-BASICAUTH",            "serial": "SM000030"        }    }}
+Nov 23, 2023 4:03:11 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:03:07: Response: {"trangThaiAnChiRes":{"header":{"common":{"serviceVersion":"1","messageId":"4d47f998-8af8-4824-8729-f966304c8ea5","transactionId":"b148cf0f-ca85-4ef1-949c-0b9aa11350ae","messageTimestamp":"2023-11-23 16:03:07"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"transId":"9566ff1b-92a1-4f29-a724-a9263f78aa9a","serial":"SM000030","com":"VN1922979-NCB Hoang ngan","status":null}}}
+Nov 23, 2023 4:03:11 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:03:07: Response Send To T24: 0*000*Successful*SM000030*VN1922979-NCB Hoang ngan*
+Nov 23, 2023 4:17:44 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:17:44: getCustomerInfoById^10230001
+Nov 23, 2023 4:17:48 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:17:44: Request: {    "getCustomerInfoByIdReq": {        "header": {            "common": {                "serviceVersion": "[11]",                "messageId": "[12023-11-23 1T24:1MB:44209ae2023-11-23 1T24:1MB:44a-aRUJBTksxMjM=d2023-11-23 1T24:1MB:44-2023-11-23 1T24:1MB:44fRUJBTksxMjM=a-bbMB1-f1MB2023-11-23 1T24:1MB:44a9e2023-11-23 1T24:1MB:44c-fdT24d-2023-11-23 1T24:1MB:44399-RUJBTksxMjM=cT242023-11-23 1T24:1MB:44-b3fe99adMBfaabMBRUJBTksxMjM=bcRUJBTksxMjM=220d]",                "transactionId": "[11MB2023-11-23 1T24:1MB:44a9e2023-11-23 1T24:1MB:44c-fdT24d-2023-11-23 1T24:1MB:44399-RUJBTksxMjM=cT242023-11-23 1T24:1MB:44-b3fe99adMBfaa]",                "messageTimestamp": "[12023-11-23 1T24:1MB:44]"            },            "client": {                "sourceAppID": "[1MB]",                "targetAppIDs": "[1T24]",                "userDetail": {                    "userID": "[1MB]",                    "userPassword": "[1RUJBTksxMjM=]"                }            }        },        "bodyReq": {            "functionCode": "FLEXCAS1-GETCUSTOMERINFOBYID-SOAP-T2023-11-23 1T24:1MB:44209ae2023-11-23 1T24:1MB:44a-aRUJBTksxMjM=d2023-11-23 1T24:1MB:44-2023-11-23 1T24:1MB:44fRUJBTksxMjM=a-bbMB1-f1MB2023-11-23 1T24:1MB:44a9e2023-11-23 1T24:1MB:44c-fdT24d-2023-11-23 1T24:1MB:44399-RUJBTksxMjM=cT242023-11-23 1T24:1MB:44-b3fe99adMBfaabMBRUJBTksxMjM=bcRUJBTksxMjM=220d2023-11-23 1T24:1MB:44",            "id": "102023-11-23 1T24:1MB:44209ae2023-11-23 1T24:1MB:44a-aRUJBTksxMjM=d2023-11-23 1T24:1MB:44-2023-11-23 1T24:1MB:44fRUJBTksxMjM=a-bbMB1-f1MB2023-11-23 1T24:1MB:44a9e2023-11-23 1T24:1MB:44c-fdT24d-2023-11-23 1T24:1MB:44399-RUJBTksxMjM=cT242023-11-23 1T24:1MB:44-b3fe99adMBfaabMBRUJBTksxMjM=bcRUJBTksxMjM=220d1MB2023-11-23 1T24:1MB:44a9e2023-11-23 1T24:1MB:44c-fdT24d-2023-11-23 1T24:1MB:44399-RUJBTksxMjM=cT242023-11-23 1T24:1MB:44-b3fe99adMBfaa0001"        }    }}
+Nov 23, 2023 4:17:48 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:17:44: Response: {"getCustomerInfoByIdRes":{"header":{"common":{"serviceVersion":"[11]","messageId":"[12023-11-23 1T24:1MB:44209ae2023-11-23 1T24:1MB:44a-aRUJBTksxMjM=d2023-11-23 1T24:1MB:44-2023-11-23 1T24:1MB:44fRUJBTksxMjM=a-bbMB1-f1MB2023-11-23 1T24:1MB:44a9e2023-11-23 1T24:1MB:44c-fdT24d-2023-11-23 1T24:1MB:44399-RUJBTksxMjM=cT242023-11-23 1T24:1MB:44-b3fe99adMBfaabMBRUJBTksxMjM=bcRUJBTksxMjM=220d]","transactionId":"[11MB2023-11-23 1T24:1MB:44a9e2023-11-23 1T24:1MB:44c-fdT24d-2023-11-23 1T24:1MB:44399-RUJBTksxMjM=cT242023-11-23 1T24:1MB:44-b3fe99adMBfaa]","messageTimestamp":"[12023-11-23 1T24:1MB:44]"},"client":{"sourceAppID":"[1MB]","targetAppIDs":"[1T24]","userDetail":{"userID":"[1MB]","userPassword":"[1RUJBTksxMjM=]"}}},"responseStatus":{"status":"1","globalErrorCode":"001","globalErrorDescription":"Invalid transaction","errorInfo":[{"errorCode":"4395","errorDesc":"java.lang.ArrayIndexOutOfBoundsException"}]}}}
+Nov 23, 2023 4:17:48 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:17:44: Response Send To T24: 1*001*Invalid transaction**
+Nov 23, 2023 4:19:41 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:19:41: getCustomerInfoById^10230001
+Nov 23, 2023 4:22:39 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:22:38: getCustomerInfoById^10230001
+Nov 23, 2023 4:22:39 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:22:38: Request: {    "getCustomerInfoByIdReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "06d9b445-7666-4ad6-ab40-d35390bec152",                "transactionId": "ec1a73c4-00d5-4cf6-aa49-111f769b6a66",                "messageTimestamp": "2023-11-23 16:22:38"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-GETCUSTOMERINFOBYID-SOAP-T24",            "id": "10230001"        }    }}
+Nov 23, 2023 4:22:40 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:22:38: Response: {"getCustomerInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"06d9b445-7666-4ad6-ab40-d35390bec152","transactionId":"ec1a73c4-00d5-4cf6-aa49-111f769b6a66","messageTimestamp":"2023-11-23 16:22:38"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETCUSTOMERINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":[]},"cifByLegalDetailType":{"id":"10230001","name":"CTY BAO DAM AN TOAN HH TAY NAM BO WEST - SOUTHERN MARITIME SAFETY COM PANY","sector":"2100","taxid":"3500101379003","companyBook":"VN0010107","customerStatus":"17","industry":"7200","target":"1","customerType":"","residence":"VN","nationality":"VN","identifyMethod":"","dateOfBirth":"","gender":"","legalDocName":"Business License#LEGAL ID#Passport","legalIdName":"3500101379-003#LegalId.2#LegalId.3","legalIssDate":"20211217#20230915#20230914","legalExpdate":"#20230930#20230930","legalIssAuth":"SO KH&DT TP CAN THO#Legal Iss Auth.2#Legal Iss Auth.3","sms1":"84129238476#8499999999#84044556677","postingRestrict":"","address":"60 LE HONG PHONG PHUONG TRA AN QUAN BINH THUY THANH PHO CAN THO","contactPerson":"GIAM DOC#NGUYEN THI THUY#NGUYEN THANH MAI#PHAM CONG THUAN#LE PHUONG","position":"BUI DUC THANG#PHO PHONG#TRUONG TRONG TAI CHINH- KE TOAN#PHO GIAM DOC#TRUONG PHONG","birthdate":"19650416####","idNum":"079065003888#151817160#151307388#034078006278#211516612","issueDate":"20180509#20130731#20131209#20180117#20110815","placeOfIssue":"CCS#CA THAI BINH#THAI BINH#CUC CANH SAT#BINH DINH"}}}}
+Nov 23, 2023 4:22:40 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:22:38: Response Send To T24: 0*000*Successful**
+Nov 23, 2023 4:23:24 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:23:24: getCustomerInfoById^10230001
+Nov 23, 2023 4:23:25 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:23:24: Request: {    "getCustomerInfoByIdReq": {        "header": {            "common": {                "serviceVersion": "1",                "messageId": "0af1eb5a-da2c-4938-88bb-402a844df00f",                "transactionId": "2dcd7180-894d-4043-9e96-00c8e76357cc",                "messageTimestamp": "2023-11-23 16:23:24"            },            "client": {                "sourceAppID": "MB",                "targetAppIDs": "T24",                "userDetail": {                    "userID": "MB",                    "userPassword": "RUJBTksxMjM="                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-GETCUSTOMERINFOBYID-SOAP-T24",            "id": "10230001"        }    }}
+Nov 23, 2023 4:23:25 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:23:24: Response: {"getCustomerInfoByIdRes":{"header":{"common":{"serviceVersion":"1","messageId":"0af1eb5a-da2c-4938-88bb-402a844df00f","transactionId":"2dcd7180-894d-4043-9e96-00c8e76357cc","messageTimestamp":"2023-11-23 16:23:24"},"client":{"sourceAppID":"MB","userDetail":{"userID":"MB","userPassword":"RUJBTksxMjM="}}},"responseStatus":{"status":"0","globalErrorCode":"000","globalErrorDescription":"Successful"},"bodyRes":{"functionCode":"FLEXCASH-GETCUSTOMERINFOBYID-SOAP-T24","twsFlexStatus":{"successIndicator":"Success","messages":[]},"cifByLegalDetailType":{"id":"10230001","name":"CTY BAO DAM AN TOAN HH TAY NAM BO WEST - SOUTHERN MARITIME SAFETY COM PANY","sector":"2100","taxid":"3500101379003","companyBook":"VN0010107","customerStatus":"17","industry":"7200","target":"1","customerType":"","residence":"VN","nationality":"VN","identifyMethod":"","dateOfBirth":"","gender":"","legalDocName":"Business License#LEGAL ID#Passport","legalIdName":"3500101379-003#LegalId.2#LegalId.3","legalIssDate":"20211217#20230915#20230914","legalExpdate":"#20230930#20230930","legalIssAuth":"SO KH&DT TP CAN THO#Legal Iss Auth.2#Legal Iss Auth.3","sms1":"84129238476#8499999999#84044556677","postingRestrict":"","address":"60 LE HONG PHONG PHUONG TRA AN QUAN BINH THUY THANH PHO CAN THO","contactPerson":"GIAM DOC#NGUYEN THI THUY#NGUYEN THANH MAI#PHAM CONG THUAN#LE PHUONG","position":"BUI DUC THANG#PHO PHONG#TRUONG TRONG TAI CHINH- KE TOAN#PHO GIAM DOC#TRUONG PHONG","birthdate":"19650416####","idNum":"079065003888#151817160#151307388#034078006278#211516612","issueDate":"20180509#20130731#20131209#20180117#20110815","placeOfIssue":"CCS#CA THAI BINH#THAI BINH#CUC CANH SAT#BINH DINH"}}}}
+Nov 23, 2023 4:23:25 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:23:24: Response Send To T24: 0*000*Successful*10230001*CTY BAO DAM AN TOAN HH TAY NAM BO WEST - SOUTHERN MARITIME SAFETY COM PANY
+Nov 23, 2023 4:36:55 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:36:55: trangThaiAnChi^SM000030
+
+2023-11-23 16:36:55  java.lang.NullPointerException
+	at ConfigReader.GetJsonConfigByMultiKey(ConfigReader.java:79)
+	at CallAPIController.SetInputCommonData(CallAPIController.java:122)
+	at CallAPIController.CallESBRestAPI(CallAPIController.java:51)
+	at App.main(App.java:16)
+Nov 23, 2023 4:36:56 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:36:55: Request: {    "trangThaiAnChiReq": {        "header": {            "common": {                "serviceVersion": "[serviceVersion]",                "messageId": "[messageId]",                "transactionId": "[transactionId]",                "messageTimestamp": "[messageTimestamp]"            },            "client": {                "sourceAppID": "[sourceAppID]",                "targetAppIDs": "[targetAppIDs]",                "userDetail": {                    "userID": "[userID]",                    "userPassword": "[userPassword]"                }            }        },        "bodyReq": {            "functionCode": "FLEXCASH-REST-TRANGTHAIANCHI-BASICAUTH",            "serial": "SM000030"        }    }}
+Nov 23, 2023 4:36:56 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:36:55: Response: {"trangThaiAnChiRes":{"header":{"common":{"serviceVersion":"[serviceVersion]","messageId":"[messageId]","transactionId":"[transactionId]","messageTimestamp":"[messageTimestamp]"},"client":{"sourceAppID":"[sourceAppID]","targetAppIDs":"[targetAppIDs]","userDetail":{"userID":"[userID]","userPassword":"[userPassword]"}}},"responseStatus":{"status":"1","globalErrorCode":"007","globalErrorDescription":"Invalid service version or invalid operation","errorInfo":[{"errorCode":"4011","errorDesc":"Invalid label name"}]}}}
+Nov 23, 2023 4:36:56 PM LogControl WriteLog
+INFO: 
+2023-11-23 16:36:55: Response Send To T24: 1*007*Invalid service version or invalid operation***
