@@ -1,6 +1,6 @@
 {
     "getCustomerInfoByIdReq": {
-        "header2": {
+        "header": {
             "common": {
                 "serviceVersion": "[H1]",
                 "messageId": "[H2]",
