@@ -3,22 +3,16 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.io.UnsupportedEncodingException;
-import java.nio.Buffer;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Properties;
 
 
-import com.google.gson.Gson;
-import com.google.gson.JsonIOException;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.google.gson.JsonSyntaxException;
 import com.google.gson.stream.JsonReader;
 
 public class ConfigReader 
@@ -31,23 +25,9 @@ public class ConfigReader
     public static String FORMAT_CNF_URL = "endPoint.%s.url";
     public static String FORMAT_CNF_METHOD = "endPoint.%s.method";
     public static String FORMAT_CNF_FILE = "endPoint.%s.templateFile";
-    public static String FORMAT_CNF_ESB = "endPoint.%s.esb";
+    public static String FORMAT_CNF_ESB = "endPoint.%s.esbHeader";
+    public static String FORMAT_CNF_ESB_DEFAULT = "connection.esbHeader";
     public static String FORMAT_CNF_FILE_RES = "endPoint.%s.templateFileResponse";
-     
-    public static void ParserJson() throws Exception
-    {
-        try (Reader reader = new BufferedReader(new FileReader(CONFIG_FILE_PATH))) 
-        {
-            Gson gson = new Gson();
-            HashMap<String,String>  json = gson.fromJson(reader,HashMap.class);         
-               
-            json.values().getClass();            
-            System.out.println(json.values());
-            System.out.println(json.toString());
-        } catch (Exception e) {
-            throw e;
-        }
-    }
 
     public static String GetFlatFileConfig(String pName) throws Exception
     {        
@@ -103,7 +83,6 @@ public class ConfigReader
             reader.close();
             return lstResult;
         } catch (FileNotFoundException | UnsupportedEncodingException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
             throw e;
         }
@@ -114,7 +93,6 @@ public class ConfigReader
             JsonObject jObj = JsonParser.parseReader(jReader).getAsJsonObject();
             return jObj;
         } catch (Exception e) {
-            // TODO: handle exception
             throw e;
         }
     }

@@ -37,6 +37,8 @@ public class CustomJsonHandle{
             return GetMultiLevelValueConfig(kName, fReader);
         } catch (JsonIOException | JsonSyntaxException | IOException e) {
             throw e;
+        }finally{
+            fReader.close();
         }
     }
 

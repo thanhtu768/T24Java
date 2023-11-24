@@ -15,10 +15,10 @@ import java.util.List;
 import java.util.UUID;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-
-import Model.ClientESB;
 import Model.CommonInfoESB;
 import Model.ESBRequestHeader;
 import Model.T24ParamModel;
@@ -34,7 +34,7 @@ public class CallAPIController {
     public static final Date NOW_DATETIME = Calendar.getInstance().getTime();
     public static String FORMAT_TEMP_RES_STATUS = "%sres.responseStatus.status";
     public static String FORMAT_TEMP_RES_BODY = "%sRes.bodyRes";
-    static String strUrl, method, request, esbCf;
+    static String strUrl, method, request, endPoitEsbCf, defaultEsbCf;
     static URL url;
     public static T24ParamModel paramModel = new T24ParamModel();
 
@@ -48,10 +48,12 @@ public class CallAPIController {
 
     public static String CallESBRestAPI(String data) {
         try {
+            String res;
             SetInputCommonData(data);
-            request = BuildRequestFromTempData(paramModel);
-            request = GetESBRequestHeader(request, esbCf);
-            return GetResponseString(request, false);
+            request = BuildDataFromTempReq(paramModel);
+            request = GetESBRequestHeaderV2(request, endPoitEsbCf);
+            res = GetResponseString(request, false);
+            return res;
         } catch (Exception e) {
             e.printStackTrace();
             LogControl.WriteStackTrace(e);
@@ -59,12 +61,14 @@ public class CallAPIController {
         }
     }
 
-     public static String CallESB_UseFullResponse(String data) {
+     public static String CallESB_GetFullResponse(String data) {
         try {
+            String res;
             SetInputCommonData(data);
-            request = BuildRequestFromTempData(paramModel);
-            request = GetESBRequestHeader(request, esbCf);
-            return GetResponseString(request, true);
+            request = BuildDataFromTempReq(paramModel);
+            request = GetESBRequestHeaderV2(request, endPoitEsbCf);
+            res = GetResponseString(request, false);
+            return res;
         } catch (Exception e) {
             e.printStackTrace();
             LogControl.WriteStackTrace(e);
@@ -80,11 +84,13 @@ public class CallAPIController {
      */
     public static String CallESB_UseBodyRequest(String data) throws Exception {
         try {
+            String res;
             SetInputCommonData(data);
-            ESBRequestHeader reqHeaderObj = GetESBRequestHeader(esbCf);
+            ESBRequestHeader reqHeaderObj = GetESBRequestHeaderV2(endPoitEsbCf);
             String reqHeader = reqHeaderObj.toJson();
-            request = BuildRequestFromStringData(reqHeader, paramModel.requestDataRaw);
-            return GetResponseString(request, false);
+            request = BuildRequestFromStringData(reqHeader, paramModel.requestDataRaw, paramModel.endPointName);
+            res = GetResponseString(request, false);
+            return res;
         } catch (Exception e) {
             e.printStackTrace();
             LogControl.WriteStackTrace(e);
@@ -118,8 +124,12 @@ public class CallAPIController {
         method = ConfigReader
                 .GetJsonConfigByMultiKey(String.format(ConfigReader.FORMAT_CNF_METHOD, paramModel.endPointName));
         url = new URL(strUrl);
-        esbCf = ConfigReader
+        endPoitEsbCf = ConfigReader
                 .GetJsonConfigByMultiKey(String.format(ConfigReader.FORMAT_CNF_ESB, paramModel.endPointName));
+        defaultEsbCf = ConfigReader.GetJsonConfigByMultiKey(ConfigReader.FORMAT_CNF_ESB_DEFAULT);        
+        if(endPoitEsbCf == null){
+            endPoitEsbCf = defaultEsbCf;
+        }
     }
 
     public static T24ParamModel GetT24ParamModel(String data) {
@@ -127,7 +137,6 @@ public class CallAPIController {
             T24ParamModel t24DataModel = new T24ParamModel();
             char FM = (char) 254;
             char VM = (char) 253;
-            // char SM = (char)252;
             String[] dataArray = data.split("[" + FM + "^]");
             t24DataModel.endPointName = dataArray[0];
             t24DataModel.requestDataRaw = dataArray[1];
@@ -141,7 +150,7 @@ public class CallAPIController {
         }
     }
 
-    public static String BuildRequestFromTempData(T24ParamModel t24DataModel) throws Exception {
+    public static String BuildDataFromTempReq(T24ParamModel t24DataModel) throws Exception {
         String templateFilePath = ConfigReader
                 .GetJsonConfigByMultiKey(String.format(ConfigReader.FORMAT_CNF_FILE, t24DataModel.endPointName));
         try (BufferedReader rd = new BufferedReader(new FileReader(templateFilePath))) {
@@ -162,10 +171,10 @@ public class CallAPIController {
         }
     }
 
-    public static String BuildRequestFromStringData(String header, String body) throws Exception {
+    public static String BuildRequestFromStringData(String header, String body, String endPointName) throws Exception {
         try {
             Gson gson = new Gson();
-            String rootName = String.format(FORMART_REQ_ROOT_NAME, paramModel.endPointName);
+            String rootName = String.format(FORMART_REQ_ROOT_NAME, endPointName);
             Object objHeader = gson.fromJson(header, Object.class);
             Object objBody = gson.fromJson(body, Object.class);
             HashMap<String, Object> map = new HashMap<String, Object>();
@@ -218,7 +227,7 @@ public class CallAPIController {
                 return jsonResponse;
             
             JsonObject jResObj = JsonParser.parseString(jsonResponse).getAsJsonObject();
-            String result = GetResponseResultByConfig(jResObj);
+            String result = BuildResponseResultByConfig(jResObj);
             
             LogControl.WriteLog("Response: " + jsonResponse);
             LogControl.WriteLog("Response Send To T24: " + result);
@@ -229,7 +238,7 @@ public class CallAPIController {
         }
     }
     
-    public static String GetResponseResultByConfig(JsonObject resBody){
+    public static String BuildResponseResultByConfig(JsonObject resBody){
         try {
             List<String> resParam = ConfigReader.GetResponseConfContent(paramModel.endPointName);
             List<String> T24FormatResponse = new ArrayList<String>();
@@ -249,35 +258,9 @@ public class CallAPIController {
         return null;
     }
 
-    public String GetESBResponseStatus(String param, T24ParamModel paramModel)
-            throws Exception {
-        try {
-            String jsonResponse = GetResponseString(param, true);
-            JsonObject jObject = JsonParser.parseString(jsonResponse).getAsJsonObject();
-            String keyStatus = String.format(FORMAT_TEMP_RES_STATUS, paramModel.endPointName);
-            String value = CustomJsonHandle.GetJsonElementByMultiKey(jObject, keyStatus).getAsString();
-            return value;
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw e;
-        }
-    }
-
-    public String GetESBResponseStatus(String jsonResponse) throws Exception {
-        try {
-            JsonObject jObject = JsonParser.parseString(jsonResponse).getAsJsonObject();
-            String keyStatus = String.format(FORMAT_TEMP_RES_STATUS, paramModel.endPointName);
-            String value = CustomJsonHandle.GetJsonElementByMultiKey(jObject, keyStatus).getAsString();
-            return value;
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw e;
-        }
-    }
-
     public static CommonInfoESB GetCommonInfoESB() throws Exception {
         CommonInfoESB common = new CommonInfoESB();
-        common.serviceVersion = ConfigReader.GetJsonConfigByMultiKey("connection.esb.serviceVersion");
+        common.serviceVersion = ConfigReader.GetJsonConfigByMultiKey("connection.esbHeader.common.serviceVersion");
         common.messageId = UUID.randomUUID().toString();
         common.transactionId = UUID.randomUUID().toString();
         DateFormat dateFormat = new SimpleDateFormat(FORMAT_DATE_TIME);
@@ -285,70 +268,25 @@ public class CallAPIController {
         return common;
     }
 
-    public static ESBRequestHeader GetESBRequestHeader(String esbConfig) throws Exception {
+    public static ESBRequestHeader GetESBRequestHeaderV2(String esbConfig) throws Exception {
         ESBRequestHeader header = new ESBRequestHeader();
-        header.common = GetCommonInfoESB();
-        String hdDataSource = "connection";
-        if(esbConfig != null)
-        {
-            hdDataSource = "endPoint."+paramModel.endPointName;
-        }
-        header.client = GetClientInfo(hdDataSource);
+        Gson gson = new GsonBuilder().disableHtmlEscaping().create();
+        header = gson.fromJson(esbConfig, ESBRequestHeader.class);
         return header;
     }
 
-    public static ClientESB GetDefaultClientInfo() throws Exception {
-        try {
-            ClientESB esb = new ClientESB();
-            esb.sourceAppID = ConfigReader.GetJsonConfigByMultiKey("connection.esb.sourceAppID");
-            esb.targetAppIDs = ConfigReader.GetJsonConfigByMultiKey("connection.esb.targetAppIDs");
-            esb.userDetail.userID = ConfigReader.GetJsonConfigByMultiKey("connection.esb.userID");
-            esb.userDetail.userPassword = ConfigReader.GetJsonConfigByMultiKey("connection.esb.userPassword");
-            return esb;
-        } catch (Exception e) {
-            throw e;
-        }
-    }
-
-    public static ClientESB GetClientInfo(String sourceName) throws Exception {
-        try {
-            ClientESB esb = new ClientESB();
-            esb.sourceAppID = ConfigReader.GetJsonConfigByMultiKey(String.format("%s.esb.sourceAppID", sourceName));
-            
-            esb.targetAppIDs = ConfigReader.GetJsonConfigByMultiKey(String.format("%s.esb.targetAppIDs", sourceName));
-            esb.userDetail.userID = ConfigReader.GetJsonConfigByMultiKey(String.format("%s.esb.userID", sourceName));
-            esb.userDetail.userPassword = ConfigReader.GetJsonConfigByMultiKey(String.format("%s.esb.userPassword", sourceName));
-            return esb;
-        } catch (Exception e) {
-            throw e;
-        }
-    }
-
-    public static String GetESBRequestHeader(ESBRequestHeader headerObj) {
-        try {
-            Gson gson = new Gson();
-            String result = gson.toJson(headerObj);
-            return result;
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw e;
-        }
-    }
-
-    public static String GetESBRequestHeader(String request, String esbConfig) throws Exception {
+    public static String GetESBRequestHeaderV2(String requestBody, String esbConfig) throws Exception {
         ESBRequestHeader headerESB;
         try {
-            headerESB = GetESBRequestHeader(esbConfig);
-            request = request.replace("[H1]", headerESB.common.serviceVersion);
-            request = request.replace("[H2]", headerESB.common.messageId);
-            request = request.replace("[H3]", headerESB.common.transactionId);
-            request = request.replace("[H4]", headerESB.common.messageTimestamp);
-
-            request = request.replace("[H5]", headerESB.client.sourceAppID);
-            request = request.replace("[H6]", headerESB.client.targetAppIDs);
-            request = request.replace("[H7]", headerESB.client.userDetail.userID);
-            request = request.replace("[H8]", headerESB.client.userDetail.userPassword);            
-            return request;
+            headerESB = GetESBRequestHeaderV2(esbConfig);
+            if(headerESB.common.messageId.isEmpty()){
+                headerESB.common = GetCommonInfoESB();
+            }
+            JsonObject jObj = JsonParser.parseString(request).getAsJsonObject();
+            Gson gson = new GsonBuilder().disableHtmlEscaping().create();
+            JsonElement jElem = gson.toJsonTree(headerESB);
+            jObj.get(String.format(FORMART_REQ_ROOT_NAME, paramModel.endPointName)).getAsJsonObject().add("header", jElem);;
+            return gson.toJson(jObj);            
         } catch (Exception e) {
             e.printStackTrace();
             throw e;

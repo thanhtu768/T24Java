@@ -1,6 +1,7 @@
 package Model;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 public class ESBRequestHeader {
     public CommonInfoESB common = new CommonInfoESB();
@@ -8,7 +9,7 @@ public class ESBRequestHeader {
 
     public String toJson(){
         try {
-            Gson gson = new Gson();
+            Gson gson = new GsonBuilder().disableHtmlEscaping().create();
             String result = gson.toJson(this);
             return result;
         } catch (Exception e) {
