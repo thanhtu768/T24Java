@@ -5,7 +5,7 @@
                 "serviceVersion": "[serviceVersion]",
                 "messageId": "[messageId]",
                 "transactionId": "[transactionId]",
-                "messageTimestamp": "[messageTimestamp]"
+                "messageTimestamp": "[messageTimestamp]" 
             },
             "client": {
                 "sourceAppID": "[sourceAppID]",
